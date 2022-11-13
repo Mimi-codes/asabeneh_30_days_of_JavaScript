@@ -1,4 +1,5 @@
 //num 1 
+
 const base = parseInt(prompt('Enter base:'));
 const height = parseInt(prompt('Enter height:'));
 const areaOfTriangle = 0.5 * base * height;
@@ -62,9 +63,10 @@ console.log(`I am ${sub} years older than you.`);
 
 // num 13
 const birthYear =  parseInt(prompt('Enter birth year:'));
-birthYear >= 18 ? alert(`You are ${birthYear}. You are old enough to drive`) : alert(`You are ${birthYear}. You will be allowed to drive after 18 - ${birthYear} years.`);
+birthYear >= 18 ? alert(`You are ${birthYear}. You are old enough to drive`) : alert(`You are ${birthYear}. You will be allowed to drive after ${18 - birthYear} years.`);
 
 // num 14
+
 const numYears = parseInt(prompt('Enter number of years you live:'));
 const yearsLived = numYears * 3153600000;
 alert(`You have lived ${yearsLived} seconds`);
