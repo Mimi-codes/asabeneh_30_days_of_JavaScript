@@ -193,6 +193,8 @@ export const countries = [
     'Zambia',
     'Zimbabwe'
   ]
+  
+  //num 4
 let landCountries = [];
   let nonLandCountries = [];
   for (let i = 0; i < countries.length; i++) {
@@ -203,3 +205,40 @@ let landCountries = [];
       }
   }
   console.log(landCountries);
+
+ //num 5
+ let highestCharacter = [];
+ for (let i = 0; i < countries.length; i++) {
+    if(countries[i].length > highestCharacter.length) {
+        highestCharacter = countries[i];
+    }
+ }
+ console.log(highestCharacter);
+
+  //num 6
+  //same as no. 4
+  //num 7
+ let fourCharacters = [];
+ for (let i = 0; i < countries.length; i++) {
+  if (countries[i].length === 4) {
+    fourCharacters.push(countries[i])
+  }
+ }
+ console.log(fourCharacters);
+ 
+  //num 8
+//   let twoOrMoreWords = [];
+//   for(let i = 0; i < countries.length; i++) {
+//if() {
+
+// }
+//   }
+//   console.log(twoOrMoreWords)
+ 
+ //num 9
+ let reverseCountries = [];
+for (let i = 0; i < countries.length; i++) {
+reverseCountries.push(countries[i].toUpperCase());
+}
+reverseCountries.reverse();
+ console.log(reverseCountries);

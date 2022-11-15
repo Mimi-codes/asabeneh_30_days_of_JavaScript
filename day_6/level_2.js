@@ -43,8 +43,9 @@ for (i = 0; i < 1; i++) {
 }
 
 //num 5
+let countriesLength = [];
 for(const country of countries) {
-    console.log(country.length);
+    console.log(countriesLength.push(country.length));
 }
 
 //num 6
@@ -78,6 +79,15 @@ console.log(`countries with "ia" [${iaCountries}]`);
 console.log(`These are countries that ends without "ia" [${nonIaCountries}]`);
 
 //num 9
+
+let highestCharacter = [];
+for (let i = 0; i < countries.length; i++) {
+   if(countries[i].length > highestCharacter.length) {
+       highestCharacter = countries[i];
+   }
+}
+console.log(highestCharacter);
+
 //num 10
 let countriesWithFiveChars = [];
 for (let i = 0; i < countries.length; i++) {
@@ -88,6 +98,15 @@ for (let i = 0; i < countries.length; i++) {
 console.log(countriesWithFiveChars);
 
 //num 11
+
+let longestWord = '';
+for (let i = 0; i < webTechs.length; i++) {
+   if(webTechs[i].length >longestWord.length) {
+    longestWord = webTechs[i];
+   }
+}
+console.log(longestWord);
+
 //num 12
 let newWebTechs = [];
 for (let i = 0; i < webTechs.length; i++) {
@@ -104,7 +123,7 @@ console.log(mern);
 
 //num 14
 let techArray = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"];
-for (techArr of techArray) {
+for (const techArr of techArray) {
     console.log(techArr);
 }
 

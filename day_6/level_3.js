@@ -25,7 +25,6 @@ const countries = [
   const mernStack = ['MongoDB', 'Express', 'React', 'Node']
 
 //num 1
-/*
 let copyArr = [];
 for(i = 0; i < countries.length; i++) {
     let copy = countries[i].slice(0);
@@ -34,19 +33,22 @@ for(i = 0; i < countries.length; i++) {
 console.log(copyArr);
 
 //num 2
-let copyArr = [];
+let _copyArr = [];
 let sortedCountries = [];
-copyArr = countries.slice(0);
-// sortedCountries.push(copyArr);
-copyArr.sort();
-sortedCountries.push(copyArr)
+_copyArr = countries.slice(0);
+// sortedCountries.push(_copyArr);
+_copyArr.sort();
+sortedCountries.push(_copyArr)
 console.log(sortedCountries);
 
 //num 3
-// let sortedMernStack = mernStack.sort();
-// console.log(sortedMernStack);
-let sortedArr = webTechs.concat(mernStack);
-console.log(sortedArr.sort())
-*/
+ let sortedMernStack = mernStack.sort();
+ console.log(sortedMernStack);
+let sortedWebTechs = webTechs.sort();
+console.log(sortedWebTechs);
+
 //num 4
-import { countries } from "./countries"
+import { countries } from "./countries" //code in countries.js
+
+//num 5
+

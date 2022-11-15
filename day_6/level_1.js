@@ -38,20 +38,27 @@ do {
 } while (m >= 0);
 
 //num 3
-// for (let i = 0; i >= n)
+let n = parseInt(prompt('Enter number:'));
+for (let i = 0; i <= n; i++) {
+    console.log(i);
+}
 
 //num 4
+let pattern = '';
+for (let i = 0; i < 7; i++) {
+console.log(pattern += '#');
+}
 
 // num 5
-let numPattern = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-for (i = 0; i < numPattern.length; i++) {
-console.log(`${numPattern[i]} x ${numPattern[i]} = ${numPattern[i] ** 2}`);
+// let numPattern = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (i = 0; i <= 10; i++) {
+console.log(`${i} x ${i} = ${i ** 2}`);
 }
 
 //num 6
-let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-for (i = 0; i < num.length; i++) {
-    console.log(`${num[i]} ${num[i] ** 2} ${num[i] ** 3}`)
+// let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (i = 0; i <= 10; i++) {
+    console.log(`${i} ${i ** 2} ${i ** 3}`)
 }
 
 //num 7
@@ -65,6 +72,11 @@ for (i = 1; i <= 100; i+=2) {
 }
 
 //num 9
+// for(i = 1; i <= 100; i++) {
+    // if(i % i === 0 && i % 1 === 0) {
+        // console.log(i)
+    // }
+// }
 
 //num 10
 let sum = 0;
