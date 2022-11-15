@@ -1,5 +1,4 @@
 //num 1
-/*
 function fullName() {
 let firstName = 'Mariam';
 let lastName = 'Ismael';
@@ -47,7 +46,6 @@ function areaOfCircle(r) {
     let area = Math.PI * r * r;
 return area;
 }
-
 console.log(areaOfCircle(5));
 
 //num 8 
@@ -106,6 +104,7 @@ function calcBMI() {
 }
 calcBMI();
 
+
 //num 14 
 function checkSeason(month) {
     
@@ -131,8 +130,8 @@ else {
     alert('Invalid month');
 }
 }
-checkSeason(month);
-*/
+checkSeason('March');
+
 //num 15
 function findMax(array) {
     var val = array[0];
@@ -145,3 +144,4 @@ function findMax(array) {
 }
 
 console.log(findMax([0, 10, 5]));
+console.log(findMax(0, -10, -2))
