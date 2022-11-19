@@ -1,7 +1,7 @@
 const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const products = [
+ const products = [
   { product: 'banana', price: 3 },
   { product: 'mango', price: 6 },
   { product: 'potato', price: ' ' },
@@ -11,7 +11,21 @@ const products = [
 ]
 
 //num 1
+//a
+//forEach() method can only be used only with arrays to iterate an array elements
+
+//b
+//map() method  can also be used to iterate an array elements but it modifies the array elements.
+
+//c
+//filter() method filters out items which fulfill filtering conditions and return a new array
+
+//d
+//reduce() method goes over every element, collects some info about eact elements and then finally returns the collective result.
+
 //num 2
+// A callback function is a function which can be passed as parameter to other function.
+
 //num 3
 countries.forEach(country => {
     // console.log(country);
@@ -81,17 +95,19 @@ let startWithE = countries.filter((country) => {
 })    
 // console.log(startWithE);
 
-//num 15
-// let pricesWithValues = products.filter((product) => {
-    // return product.price;
-// })
+// num 15
+let pricesWithValues = products.filter((product) => {
+    return product.price;
+})
 // console.log(pricesWithValues)
 
 //num 16
-// function getStringLists(arr) {
-    // return arr.names
-// }
-// console.log(getStringLists)
+function getStringLists(arr) {
+    let string = arr.filter((item) => typeof item === 'string');
+return string;
+}
+let string = getStringLists([5, 'Mariam', true])
+// console.log(string)
 
 //num 17
 let sumNum = numbers.reduce((num, cur) => num + cur, 0)
@@ -99,9 +115,42 @@ let sumNum = numbers.reduce((num, cur) => num + cur, 0)
 
 //num 18
 // const northCountries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
-// let reduceCountries = countries.reduce((act, cur) => act.slice(0, 5) + cur.slice(5))
+// let reduceCountries = northCountries.forEach((country) => {
+// return country;
+// }
+// )
+
+// let reduceCountries = northCountries.reduce((accumulator, currentValue) => {
+    // return accumulator + currentValue;
+// })
 // console.log(reduceCountries)
 
 //num 19
+//some() method checks if some of the elements are similar in one aspect while the every() method checks if all the elements are similar.
 
-//num 10
+//num 20
+let namesLength = names.some((name) => name.length > 7);
+// console.log(namesLength);
+
+//num 21
+let everyCountry = countries.every((country) => country.includes('land'))
+// console.log(everyCountry)
+
+//num 22
+//find() method returns the first element which satisfies the condition while findIndex() method returns the position of the first element which satisfies the condition
+
+//num 23
+let findCountry = countries.find((country) => country.length === 6)
+// console.log(findCountry)
+
+//num 24
+let indexCountry = countries.findIndex((country) => country.length === 6)
+// console.log(indexCountry)
+
+//num 25
+const norwayPosition = countries.findIndex((country) => country.includes('Norway'))
+// console.log(norwayPosition)
+
+//num 26
+const russiaPosition = countries.findIndex((country) => country.includes('Russia'))
+// console.log(russiaPosition)
