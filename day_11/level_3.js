@@ -43,12 +43,6 @@ let set = new Set(student)
 const convertArrayToObject = (students) => {
     // let [{name, skills, scores}] = students
 //    console.log({name, skills, scores})
-const obj3 = {};
-
-students.forEach((element, index) => {
-  obj3[{name, skill, scores} + index] = element;
-});
-console.log(obj3);
 }
 console.log(convertArrayToObject(students))
 
