@@ -196,15 +196,13 @@ export const countries = [
   
   //num 4
 let landCountries = [];
-  let nonLandCountries = [];
-  for (let i = 0; i < countries.length; i++) {
-      if(countries[i].includes('land')) {
-          landCountries.push(countries[i]);
-      } else {
-          nonLandCountries.push(countries[i]);
-      }
+  // let nonLandCountries = [];
+  for (let country of countries) {
+    if(country.includes('land')) {
+landCountries.push(country)
+    }
   }
-  console.log(landCountries);
+  // console.log(landCountries);
 
  //num 5
  let highestCharacter = [];
@@ -213,7 +211,7 @@ let landCountries = [];
         highestCharacter = countries[i];
     }
  }
- console.log(highestCharacter);
+//  console.log(highestCharacter);
 
   //num 6
   //same as no. 4
@@ -224,21 +222,20 @@ let landCountries = [];
     fourCharacters.push(countries[i])
   }
  }
- console.log(fourCharacters);
+//  console.log(fourCharacters);
  
   //num 8
-//   let twoOrMoreWords = [];
-//   for(let i = 0; i < countries.length; i++) {
-//if() {
+  let twoOrMoreWords = [];
+  for (let i = 0; i < countries.length; i++) {
+  if(countries[i].includes(' ')){
+      twoOrMoreWords.push(countries[i])
+  }
+  }
+  console.log(twoOrMoreWords)
 
-// }
-//   }
-//   console.log(twoOrMoreWords)
- 
  //num 9
  let reverseCountries = [];
-for (let i = 0; i < countries.length; i++) {
-reverseCountries.push(countries[i].toUpperCase());
-}
-reverseCountries.reverse();
- console.log(reverseCountries);
+ for(let country of countries) {
+  reverseCountries.push(country.toUpperCase())
+ }
+//  console.log(reverseCountries);

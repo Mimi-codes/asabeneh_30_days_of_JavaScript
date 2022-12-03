@@ -53,7 +53,7 @@ for(const country of countries) {
 //num 7
 let landCountries = [];
 let nonLandCountries = [];
-for (i = 0; i < countries.length; i++) {
+for (let i = 0; i < countries.length; i++) {
     if(countries[i].includes('land')) {
         landCountries.push(countries[i]);
     } else {
@@ -67,7 +67,7 @@ for (i = 0; i < countries.length; i++) {
 let iaCountries = [];
 let nonIaCountries = [];
 
-for (i = 0; i < countries.length; i++) {
+for (let i = 0; i < countries.length; i++) {
     
     if(countries[i].endsWith('ia')) {
         iaCountries.push(countries[i]);
@@ -129,7 +129,7 @@ for (const techArr of techArray) {
 
 //num 15
 let fruits = ['banana', 'orange', 'mango', 'lemon'];
-for (i = fruits.length -1; i >= 0; i--) {
+for (let i = fruits.length -1; i >= 0; i--) {
     console.log(fruits[i]);
 }
 
@@ -138,6 +138,7 @@ const fullStack = [
     ['HTML', 'CSS', 'JS', 'React'],
     ['Node', 'Express', 'MongoDB']
   ]
+  
 for (let i = 0; i < fullStack.length; i++) {
     for (let j = 0; j < fullStack[i].length; j++) {
     console.log(fullStack[i][j]);

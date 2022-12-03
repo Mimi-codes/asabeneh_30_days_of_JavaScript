@@ -79,11 +79,13 @@ for (i = 1; i <= 100; i+=2) {
 // }
 
 //num 10
-let sum = 0;
-for (i = 0; i <= 100; i++) {
-    sum = sum + i;
+let sum = 0
+let start = 0
+let end = 100
+for(let i = start; i <= end; i++) {
+    sum = sum + i
 }
-console.log(`The sum of all numbers from ${i = 0} to ${i = 100} is ${sum}`)
+ console.log(`The sum of all the numbers between ${start} to ${end} is ${sum}`)
 
 //num 11
 let sumOdd = 0;
