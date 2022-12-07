@@ -5,10 +5,10 @@ daysOfJavaScript.className = 'days_of_JS'
 daysOfJavaScript.style.display ='flex'
 daysOfJavaScript.style.margin ='0 auto'
 daysOfJavaScript.style.borderTop ='5px solid white'
-daysOfJavaScript.style.width ='50%'
+daysOfJavaScript.style.width ='70%'
 daysOfJavaScript.style.padding ='0.4rem 0.8rem'
 daysOfJavaScript.style.justifyContent ='space-between'
-daysOfJavaScript.style.backgroundColor ='yellow'
+daysOfJavaScript.style.backgroundColor ='#f7dc5c'
 mainDiv.appendChild(daysOfJavaScript)
 
 

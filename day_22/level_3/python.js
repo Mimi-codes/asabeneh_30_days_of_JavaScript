@@ -1,5 +1,4 @@
-// import {asabenehChallenges2020} from './challenge_info.js'
- const asabenehChallenges2020 = {
+const asabenehChallenges2020 = {
     description: 'Asabeneh Yetayeh challenges',
     challengeTitle: 'Asabeneh Yetayeh challenges',
     challengeSubtitle: '30DaysOfJavaScript Challenge',
@@ -199,7 +198,8 @@
   }
 
 
-// console.log(asabenehChallenges2020['keywords'])
+
+
 //body
 //heading
 let daysOfJs = document.createElement('p')
@@ -227,10 +227,10 @@ let daysOfPython = document.createElement('div')
 daysOfPython.className = 'days_of_python'
 daysOfPython.style.display ='flex'
 daysOfPython.style.margin ='0 auto'
-daysOfPython.style.width ='50%'
+daysOfPython.style.width ='70%'
 daysOfPython.style.padding ='0.4rem 0.8rem'
 daysOfPython.style.justifyContent ='space-between'
-daysOfPython.style.backgroundColor ='green'
+daysOfPython.style.backgroundColor ='#5bbc7a'
 mainDiv.appendChild(daysOfPython)
 
 //python items
@@ -288,4 +288,105 @@ let pythonStatus = document.createElement('p')
 pythonStatus.className = 'python_status'
 pythonStatus.textContent = `${asabenehChallenges2020.challenges[0].status}`
 daysOfPython.appendChild(pythonStatus)
+
+
+  
+  //About Author
+  let aboutAuthor =  document.createElement('div')
+  aboutAuthor.className = 'about_author'
+  aboutAuthor.style.margin = '0 auto'
+//   aboutAuthor.style.width = '75%'
+  document.body.appendChild(aboutAuthor)
+  
+  let firstname = `${asabenehChallenges2020.author.firstName}`
+  let lastname = `${asabenehChallenges2020.author.lastName}`
+let fullName = firstname + ' ' + lastname;
+
+
+const authorDetails = document.createElement('h4')
+authorDetails.className = 'author_details'
+authorDetails.style.textAlign = 'center'
+authorDetails.textContent = `${fullName}`
+aboutAuthor.append(authorDetails)
+
+
+let links = document.createElement('p')
+// links.textContent = `${asabenehChallenges2020.author.socialLinks.fontawesomeIcon}`.concat(`${asabenehChallenges2020.author.socialLinks.fontawesomeIcon}`)
+links.textContent = `${asabenehChallenges2020.author.socialLinks[0].fontawesomeIcon}`
+// document.body.appendChild(links)
+
+
+let bio = document.createElement('p')
+bio.textContent = `${asabenehChallenges2020.author.bio}`
+bio.style.textAlign = 'justify'
+aboutAuthor.appendChild(bio)
+
+let skillsDiv = document.createElement('div')
+skillsDiv.className = 'skills_div'
+skillsDiv.style.display = 'flex'
+skillsDiv.style.justifyContent = 'space-around'
+aboutAuthor.appendChild(skillsDiv)
+
+// title
+let titleDiv = document.createElement('div')
+titleDiv.className = 'title_div'
+titleDiv.textContent = 'Titles'
+skillsDiv.appendChild(titleDiv)
+
+
+let title1 = document.createElement('p')
+let title2 = document.createElement('p')
+let title3 = document.createElement('p')
+let title4 = document.createElement('p')
+let title5 = document.createElement('p')
+
+title1.textContent = `${asabenehChallenges2020.author.titles[0]}`
+title2.textContent = `${asabenehChallenges2020.author.titles[1]}`
+title3.textContent = `${asabenehChallenges2020.author.titles[2]}`
+title4.textContent = `${asabenehChallenges2020.author.titles[3]}`
+title5.textContent = `${asabenehChallenges2020.author.titles[4]}`
+titleDiv.append(title1, title2, title3, title4, title5)
+
+
+// skill
+let skillDiv = document.createElement('div')
+skillDiv.className = 'skill_div'
+skillDiv.textContent = 'Skills'
+skillsDiv.appendChild(skillDiv)
+
+
+let skill1 = document.createElement('p')
+let skill2 = document.createElement('p')
+let skill3 = document.createElement('p')
+let skill4 = document.createElement('p')
+let skill5 = document.createElement('p')
+let skill6 = document.createElement('p')
+
+skill1.textContent = `${asabenehChallenges2020.author.skills[0]}`
+skill2.textContent = `${asabenehChallenges2020.author.skills[1]}`
+skill3.textContent = `${asabenehChallenges2020.author.skills[2]}`
+skill4.textContent = `${asabenehChallenges2020.author.skills[3]}`
+skill5.textContent = `${asabenehChallenges2020.author.skills[4]}`
+skill6.textContent = `${asabenehChallenges2020.author.skills[4]}`
+skillDiv.append(skill1, skill2, skill3, skill4, skill5, skill6)
+
+
+// qualification
+let qualificationDiv = document.createElement('div')
+qualificationDiv.className = 'qualification_div'
+qualificationDiv.textContent = 'Qualifications'
+skillsDiv.appendChild(qualificationDiv)
+
+
+let qua1 = document.createElement('p')
+let qua2 = document.createElement('p')
+let qua3 = document.createElement('p')
+let qua4 = document.createElement('p')
+
+qua1.textContent = `${asabenehChallenges2020.author.qualifications[0]}`
+qua2.textContent = `${asabenehChallenges2020.author.qualifications[1]}`
+qua3.textContent = `${asabenehChallenges2020.author.qualifications[2]}`
+qua4.textContent = `${asabenehChallenges2020.author.qualifications[3]}`
+qualificationDiv.append(qua1, qua2, qua3, qua4)
+
 

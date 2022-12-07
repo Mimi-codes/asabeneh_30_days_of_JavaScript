@@ -1,4 +1,4 @@
-export const asabenehChallenges2020 = {
+ const asabenehChallenges2020 = {
     description: 'Asabeneh Yetayeh challenges',
     challengeTitle: 'Asabeneh Yetayeh challenges',
     challengeSubtitle: '30DaysOfJavaScript Challenge',
@@ -196,3 +196,4 @@ export const asabenehChallenges2020 = {
       }
     ]
   }
+
