@@ -390,3 +390,21 @@ qua4.textContent = `${asabenehChallenges2020.author.qualifications[3]}`
 qualificationDiv.append(qua1, qua2, qua3, qua4)
 
 
+//keywords
+let keywords = document.createElement('p')
+keywords.className = 'keywords'
+keywords.textContent = 'Keywords'
+document.body.appendChild(keywords)
+
+//keywords item
+let keywordItem = document.createElement('p')
+keywordItem.className = 'keyword_item'
+// keywordItem.style.padding = '0.2rem 0.4rem'
+// keywordItem.style.backgroundColor = 'blue'
+keywordItem.textContent = `${asabenehChallenges2020.keywords}`
+for(let i = 0; i <= keywordItem; i++) {
+   if(keywordItem[i].includes('s', 'r')) {
+    console.log(keywordItem[i])
+}
+    }
+document.body.appendChild(keywordItem)
