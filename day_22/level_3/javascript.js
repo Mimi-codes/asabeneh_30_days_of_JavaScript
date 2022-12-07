@@ -39,25 +39,13 @@ javaScriptDetails.appendChild(javaScriptDetailsSummary)
 
 
 //python summary para
-let javaScriptSummaryPara1 = document.createElement('p')
-let javaScriptSummaryPara2 = document.createElement('p')
-let javaScriptSummaryPara3 = document.createElement('p')
-let javaScriptSummaryPara4 = document.createElement('p')
-let javaScriptSummaryPara5 = document.createElement('p')
+let jsSummaryArr
+for(let i = 0; i < `${asabenehChallenges2020.challenges[1].topics.length}`; i++) {
+  jsSummaryArr = document.createElement('p')
+  jsSummaryArr.textContent = `${asabenehChallenges2020.challenges[1].topics[i]}`
+  javaScriptDetails.appendChild(jsSummaryArr)
+}
 
-javaScriptSummaryPara1.className = 'python_summary_para'
-javaScriptSummaryPara2.className = 'python_summary_para'
-javaScriptSummaryPara3.className = 'python_summary_para'
-javaScriptSummaryPara4.className = 'python_summary_para'
-javaScriptSummaryPara5.className = 'python_summary_para'
-
-javaScriptSummaryPara1.textContent = `${asabenehChallenges2020.challenges[1].topics[0]}`
-javaScriptSummaryPara2.textContent = `${asabenehChallenges2020.challenges[1].topics[1]}`
-javaScriptSummaryPara3.textContent = `${asabenehChallenges2020.challenges[1].topics[2]}`
-javaScriptSummaryPara4.textContent = `${asabenehChallenges2020.challenges[1].topics[3]}`
-javaScriptSummaryPara5.textContent = `${asabenehChallenges2020.challenges[1].topics[4]}`
-
-javaScriptDetails.append(javaScriptSummaryPara1, javaScriptSummaryPara2, javaScriptSummaryPara3, javaScriptSummaryPara4, javaScriptSummaryPara5)
 
 //js status
 let javaScriptStatus = document.createElement('p')

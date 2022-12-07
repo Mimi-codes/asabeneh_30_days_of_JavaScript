@@ -197,3 +197,9 @@
     ]
   }
 
+  // let keyss  = `${asabenehChallenges2020.keywords}`
+const result = Object.values(asabenehChallenges2020['keywords']).map(value => {
+  console.log(value)
+})
+// console.log(result)
+

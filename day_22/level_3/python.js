@@ -259,29 +259,12 @@ pythonDetails.appendChild(pythonDetailsSummary)
 
 
 //python summary para
-let pythonSummaryPara1 = document.createElement('p')
-let pythonSummaryPara2 = document.createElement('p')
-let pythonSummaryPara3 = document.createElement('p')
-let pythonSummaryPara4 = document.createElement('p')
-let pythonSummaryPara5 = document.createElement('p')
-let pythonSummaryPara6 = document.createElement('p')
-let pythonSummaryPara7 = document.createElement('p')
-
-pythonSummaryPara1.className = 'python_summary_para'
-pythonSummaryPara2.className = 'python_summary_para'
-pythonSummaryPara3.className = 'python_summary_para'
-pythonSummaryPara4.className = 'python_summary_para'
-pythonSummaryPara5.className = 'python_summary_para'
-pythonSummaryPara6.className = 'python_summary_para'
-pythonSummaryPara7.className = 'python_summary_para'
-pythonSummaryPara1.textContent = `${asabenehChallenges2020.challenges[0].topics[0]}`
-pythonSummaryPara2.textContent = `${asabenehChallenges2020.challenges[0].topics[1]}`
-pythonSummaryPara3.textContent = `${asabenehChallenges2020.challenges[0].topics[2]}`
-pythonSummaryPara4.textContent = `${asabenehChallenges2020.challenges[0].topics[3]}`
-pythonSummaryPara5.textContent = `${asabenehChallenges2020.challenges[0].topics[4]}`
-pythonSummaryPara6.textContent = `${asabenehChallenges2020.challenges[0].topics[5]}`
-pythonSummaryPara7.textContent = `${asabenehChallenges2020.challenges[0].topics[6]}`
-pythonDetails.append(pythonSummaryPara1, pythonSummaryPara2, pythonSummaryPara3, pythonSummaryPara4, pythonSummaryPara5, pythonSummaryPara6, pythonSummaryPara7)
+let pythonSummaryArr
+for(let i = 0; i < `${asabenehChallenges2020.challenges[0].topics.length}`; i++) {
+  pythonSummaryArr = document.createElement('p')
+  pythonSummaryArr.textContent = `${asabenehChallenges2020.challenges[0].topics[i]}`
+  pythonDetails.appendChild(pythonSummaryArr)
+}
 
 //python status
 let pythonStatus = document.createElement('p')
@@ -306,105 +289,101 @@ let fullName = firstname + ' ' + lastname;
 const authorDetails = document.createElement('h4')
 authorDetails.className = 'author_details'
 authorDetails.style.textAlign = 'center'
+authorDetails.style.fontSize = '1.5rem'
 authorDetails.textContent = `${fullName}`
 aboutAuthor.append(authorDetails)
 
 
 let links = document.createElement('p')
-// links.textContent = `${asabenehChallenges2020.author.socialLinks.fontawesomeIcon}`.concat(`${asabenehChallenges2020.author.socialLinks.fontawesomeIcon}`)
+links.textContent = `${asabenehChallenges2020.author.socialLinks.fontawesomeIcon}`.concat(`${asabenehChallenges2020.author.socialLinks.fontawesomeIcon}`)
 links.textContent = `${asabenehChallenges2020.author.socialLinks[0].fontawesomeIcon}`
 // document.body.appendChild(links)
 
 
 let bio = document.createElement('p')
 bio.textContent = `${asabenehChallenges2020.author.bio}`
-bio.style.textAlign = 'justify'
+bio.style.textAlign = 'center'
+bio.style.margin = '0 11rem 3rem 11rem'
+// bio.style.justifyContent = 'center'
 aboutAuthor.appendChild(bio)
 
 let skillsDiv = document.createElement('div')
 skillsDiv.className = 'skills_div'
 skillsDiv.style.display = 'flex'
-skillsDiv.style.justifyContent = 'space-around'
+skillsDiv.style.marginLeft = '11rem'
+// skillsDiv.style.justifyContent = 'space-between'
 aboutAuthor.appendChild(skillsDiv)
 
 // title
 let titleDiv = document.createElement('div')
 titleDiv.className = 'title_div'
 titleDiv.textContent = 'Titles'
+titleDiv.style.marginRight = '6rem'
 skillsDiv.appendChild(titleDiv)
 
+let titleArr
+for(let i = 0; i < `${asabenehChallenges2020['author']['titles'].length}`; i++) {
+  titleArr= document.createElement('p')
+  titleArr.textContent = `${asabenehChallenges2020['author']['titles'][i]}`
 
-let title1 = document.createElement('p')
-let title2 = document.createElement('p')
-let title3 = document.createElement('p')
-let title4 = document.createElement('p')
-let title5 = document.createElement('p')
-
-title1.textContent = `${asabenehChallenges2020.author.titles[0]}`
-title2.textContent = `${asabenehChallenges2020.author.titles[1]}`
-title3.textContent = `${asabenehChallenges2020.author.titles[2]}`
-title4.textContent = `${asabenehChallenges2020.author.titles[3]}`
-title5.textContent = `${asabenehChallenges2020.author.titles[4]}`
-titleDiv.append(title1, title2, title3, title4, title5)
+  titleDiv.appendChild(titleArr)
+}
 
 
 // skill
 let skillDiv = document.createElement('div')
 skillDiv.className = 'skill_div'
 skillDiv.textContent = 'Skills'
+skillDiv.style.marginRight = '6rem'
 skillsDiv.appendChild(skillDiv)
 
+let skillArr
+for(let i = 0; i < `${asabenehChallenges2020['author']['skills'].length}`; i++) {
+  skillArr= document.createElement('p')
+  skillArr.textContent = `${asabenehChallenges2020['author']['skills'][i]}`
 
-let skill1 = document.createElement('p')
-let skill2 = document.createElement('p')
-let skill3 = document.createElement('p')
-let skill4 = document.createElement('p')
-let skill5 = document.createElement('p')
-let skill6 = document.createElement('p')
-
-skill1.textContent = `${asabenehChallenges2020.author.skills[0]}`
-skill2.textContent = `${asabenehChallenges2020.author.skills[1]}`
-skill3.textContent = `${asabenehChallenges2020.author.skills[2]}`
-skill4.textContent = `${asabenehChallenges2020.author.skills[3]}`
-skill5.textContent = `${asabenehChallenges2020.author.skills[4]}`
-skill6.textContent = `${asabenehChallenges2020.author.skills[4]}`
-skillDiv.append(skill1, skill2, skill3, skill4, skill5, skill6)
-
+  skillDiv.appendChild(skillArr)
+}
 
 // qualification
 let qualificationDiv = document.createElement('div')
 qualificationDiv.className = 'qualification_div'
 qualificationDiv.textContent = 'Qualifications'
+qualificationDiv.style.marginRight = '6rem'
 skillsDiv.appendChild(qualificationDiv)
 
-
-let qua1 = document.createElement('p')
-let qua2 = document.createElement('p')
-let qua3 = document.createElement('p')
-let qua4 = document.createElement('p')
-
-qua1.textContent = `${asabenehChallenges2020.author.qualifications[0]}`
-qua2.textContent = `${asabenehChallenges2020.author.qualifications[1]}`
-qua3.textContent = `${asabenehChallenges2020.author.qualifications[2]}`
-qua4.textContent = `${asabenehChallenges2020.author.qualifications[3]}`
-qualificationDiv.append(qua1, qua2, qua3, qua4)
+let quaArr
+for(let i = 0; i < `${asabenehChallenges2020['author']['qualifications'].length}`; i++) {
+  quaArr= document.createElement('p')
+  quaArr.textContent = `${asabenehChallenges2020['author']['qualifications'][i]}`
+  qualificationDiv.appendChild(quaArr)
+}
 
 
 //keywords
 let keywords = document.createElement('p')
 keywords.className = 'keywords'
+keywords.style.fontWeight = 'bold'
 keywords.textContent = 'Keywords'
+keywords.style.marginLeft = '10rem'
 document.body.appendChild(keywords)
 
-//keywords item
-let keywordItem = document.createElement('p')
-keywordItem.className = 'keyword_item'
-// keywordItem.style.padding = '0.2rem 0.4rem'
-// keywordItem.style.backgroundColor = 'blue'
-keywordItem.textContent = `${asabenehChallenges2020.keywords}`
-for(let i = 0; i <= keywordItem; i++) {
-   if(keywordItem[i].includes('s', 'r')) {
-    console.log(keywordItem[i])
+  let keyItem = document.createElement('div')
+keyItem.style.display = 'flex'
+keyItem.style.flexWrap = 'wrap'
+keyItem.style.margin = '0 8rem 0 11.5rem'
+  document.body.appendChild(keyItem)
+
+  //key items
+  let arr
+for(let i = 0; i < `${asabenehChallenges2020['keywords'].length}`; i++) {
+  arr= document.createElement('p')
+  arr.textContent = `# ${asabenehChallenges2020['keywords'][i]}`
+  arr.style.margin = '0.2rem 0.4rem'
+  arr.style.padding = '0.2rem 1.6rem 0.2rem 0.4rem'
+  // arr.style.textTransform = 'italics'
+  arr.style.borderRadius = '50px' 
+  arr.style.border = '1px solid black' 
+  keyItem.appendChild(arr)
 }
-    }
-document.body.appendChild(keywordItem)
+  document.body.appendChild(keyItem)

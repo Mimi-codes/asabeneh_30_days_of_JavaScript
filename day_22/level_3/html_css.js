@@ -15,7 +15,6 @@ mainDiv.appendChild(daysOfHtml)
 let htmlTitle = document.createElement('p')
 htmlTitle.className = 'js_title'
 htmlTitle.textContent = `${asabenehChallenges2020.challenges[2].name}`
-htmlTitle.style.textDecoration = 'underline'
 daysOfHtml.appendChild(htmlTitle)
 
 //The <details> tag specifies additional details that the user can open and close on demand.
@@ -38,22 +37,14 @@ htmlDetails.appendChild(htmlDetailsSummary)
 
 
 //HTML summary para
-let htmlSummaryPara1 = document.createElement('p')
-let htmlSummaryPara2 = document.createElement('p')
-let htmlSummaryPara3 = document.createElement('p')
-let htmlSummaryPara4 = document.createElement('p')
+let htmlSummaryArr
+for(let i = 0; i < `${asabenehChallenges2020.challenges[2].topics.length}`; i++) {
+  htmlSummaryArr = document.createElement('p')
+  htmlSummaryArr.textContent = `${asabenehChallenges2020.challenges[2].topics[i]}`
+    htmlDetails.appendChild(htmlSummaryArr)
+}
 
-htmlSummaryPara1.className = 'python_summary_para'
-htmlSummaryPara2.className = 'python_summary_para'
-htmlSummaryPara3.className = 'python_summary_para'
-htmlSummaryPara4.className = 'python_summary_para'
 
-htmlSummaryPara1.textContent = `${asabenehChallenges2020.challenges[2].topics[0]}`
-htmlSummaryPara2.textContent = `${asabenehChallenges2020.challenges[2].topics[1]}`
-htmlSummaryPara3.textContent = `${asabenehChallenges2020.challenges[2].topics[2]}`
-htmlSummaryPara4.textContent = `${asabenehChallenges2020.challenges[2].topics[3]}`
-
-htmlDetails.append(htmlSummaryPara1, htmlSummaryPara2, htmlSummaryPara3, htmlSummaryPara4)
 
 //js status
 let htmlStatus = document.createElement('p')

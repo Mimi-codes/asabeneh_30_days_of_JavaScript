@@ -16,7 +16,6 @@ mainDiv.appendChild(daysOfReact)
 let reactTitle = document.createElement('p')
 reactTitle.className = 'js_title'
 reactTitle.textContent = `${asabenehChallenges2020.challenges[3].name}`
-reactTitle.style.textDecoration = 'underline'
 daysOfReact.appendChild(reactTitle)
 
 //The <details> tag specifies additional details that the user can open and close on demand.
@@ -39,28 +38,14 @@ reactDetails.appendChild(reactDetailsSummary)
 
 
 //React summary para
-let reactSummaryPara1 = document.createElement('p')
-let reactSummaryPara2 = document.createElement('p')
-let reactSummaryPara3 = document.createElement('p')
-let reactSummaryPara4 = document.createElement('p')
-let reactSummaryPara5 = document.createElement('p')
-let reactSummaryPara6 = document.createElement('p')
+let reactSummaryArr
+for(let i = 0; i < `${asabenehChallenges2020.challenges[3].topics.length}`; i++) {
+  reactSummaryArr = document.createElement('p')
+  reactSummaryArr.textContent = `${asabenehChallenges2020.challenges[3].topics[i]}`
+  reactDetails.appendChild(reactSummaryArr)
+}
 
-reactSummaryPara1.className = 'python_summary_para'
-reactSummaryPara2.className = 'python_summary_para'
-reactSummaryPara3.className = 'python_summary_para'
-reactSummaryPara4.className = 'python_summary_para'
-reactSummaryPara5.className = 'python_summary_para'
-reactSummaryPara6.className = 'python_summary_para'
 
-reactSummaryPara1.textContent = `${asabenehChallenges2020.challenges[3].topics[0]}`
-reactSummaryPara2.textContent = `${asabenehChallenges2020.challenges[3].topics[1]}`
-reactSummaryPara3.textContent = `${asabenehChallenges2020.challenges[3].topics[2]}`
-reactSummaryPara4.textContent = `${asabenehChallenges2020.challenges[3].topics[3]}`
-reactSummaryPara5.textContent = `${asabenehChallenges2020.challenges[3].topics[4]}`
-reactSummaryPara6.textContent = `${asabenehChallenges2020.challenges[3].topics[5]}`
-
-reactDetails.append(reactSummaryPara1, reactSummaryPara2, reactSummaryPara3, reactSummaryPara4, reactSummaryPara5, reactSummaryPara6)
 
 //react status
 let reactStatus = document.createElement('p')
