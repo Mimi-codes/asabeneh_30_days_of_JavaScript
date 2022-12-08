@@ -202,6 +202,23 @@ const asabenehChallenges2020 = {
 
 //body
 //heading
+let description = document.createElement('h3')
+description.textContent = `${asabenehChallenges2020['challengeTitle']} ${asabenehChallenges2020['challengeYear']}`
+description.style.textAlign = 'center'
+description.style.marginTop = '2rem'
+// let color;
+const chameleon = () => {
+    let random1 = Math.floor(Math.random() * 255)
+    let random2 = Math.floor(Math.random() * 255)
+    let random3 = Math.floor(Math.random() * 255)
+    let color = `rgb(${random1},${random2},${random3})`
+    description.style.color = color;
+}
+setInterval(chameleon, 1000)
+document.body.appendChild(description)
+
+
+
 let daysOfJs = document.createElement('p')
 daysOfJs.textContent = `${asabenehChallenges2020['challengeSubtitle']}`
 daysOfJs.style.textDecoration = 'underline'
@@ -210,6 +227,33 @@ document.body.appendChild(daysOfJs)
 
 
 //header time
+let time = document.createElement('div')
+const now = new Date()
+const year = now.getFullYear() 
+const month = now.getMonth()
+const date = now.getDate()
+const hours = now.getHours() 
+const minutes = now.getMinutes() 
+time.textContent = `0${date}/${month}/${year} 0${hours}:${minutes}`
+time.style.width = "10%";
+time.style.textAlign = "center";
+time.style.padding = "0.4rem 0.8rem";
+time.style.margin = "0.8rem auto"
+const chameleon2 = () => {
+    let random1 = Math.floor(Math.random() * 255)
+    let random2 = Math.floor(Math.random() * 255)
+    let random3 = Math.floor(Math.random() * 255)
+    color = `rgb(${random1},${random2},${random3})`
+    // year.style.color = color;
+    time.style.backgroundColor = color;
+}
+setInterval(chameleon2, 1000)
+
+// let timeDiv = document.createElement('div')
+// timeDiv.textContent = time
+// timeDiv.style.textAlign = 'center'
+document.body.appendChild(time)
+
 
 //table details
 let mainDiv = document.createElement('div')
