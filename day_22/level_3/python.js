@@ -227,7 +227,7 @@ let daysOfPython = document.createElement('div')
 daysOfPython.className = 'days_of_python'
 daysOfPython.style.display ='flex'
 daysOfPython.style.margin ='0 auto'
-daysOfPython.style.width ='70%'
+daysOfPython.style.width ='50%'
 daysOfPython.style.padding ='0.4rem 0.8rem'
 daysOfPython.style.justifyContent ='space-between'
 daysOfPython.style.backgroundColor ='#5bbc7a'
@@ -238,6 +238,7 @@ let pythonTitle = document.createElement('p')
 pythonTitle.className = 'python_title'
 pythonTitle.textContent = `${asabenehChallenges2020.challenges[0].name}`
 pythonTitle.style.textDecoration = 'underline'
+pythonTitle.style.color = '#551a8b'
 daysOfPython.appendChild(pythonTitle)
 
 //The <details> tag specifies additional details that the user can open and close on demand.
@@ -278,7 +279,7 @@ daysOfPython.appendChild(pythonStatus)
   let aboutAuthor =  document.createElement('div')
   aboutAuthor.className = 'about_author'
   aboutAuthor.style.margin = '0 auto'
-//   aboutAuthor.style.width = '75%'
+  aboutAuthor.style.width = '50%'
   document.body.appendChild(aboutAuthor)
   
   let firstname = `${asabenehChallenges2020.author.firstName}`
@@ -303,23 +304,29 @@ links.textContent = `${asabenehChallenges2020.author.socialLinks[0].fontawesomeI
 let bio = document.createElement('p')
 bio.textContent = `${asabenehChallenges2020.author.bio}`
 bio.style.textAlign = 'center'
-bio.style.margin = '0 11rem 3rem 11rem'
+// bio.style.margin = '0 11rem 3rem 11rem'
 // bio.style.justifyContent = 'center'
 aboutAuthor.appendChild(bio)
 
 let skillsDiv = document.createElement('div')
 skillsDiv.className = 'skills_div'
 skillsDiv.style.display = 'flex'
-skillsDiv.style.marginLeft = '11rem'
+// skillsDiv.style.marginLeft = '11rem'
 // skillsDiv.style.justifyContent = 'space-between'
 aboutAuthor.appendChild(skillsDiv)
 
 // title
 let titleDiv = document.createElement('div')
 titleDiv.className = 'title_div'
-titleDiv.textContent = 'Titles'
-titleDiv.style.marginRight = '6rem'
+titleDiv.style.marginRight = '4rem'
+titleDiv.style.marginTop = '1rem'
 skillsDiv.appendChild(titleDiv)
+
+let titleText = document.createElement('p')
+titleText.className = 'title_text'
+titleText.textContent = 'Titles'
+titleText.style.fontWeight = 'bold'
+titleDiv.appendChild(titleText)
 
 let titleArr
 for(let i = 0; i < `${asabenehChallenges2020['author']['titles'].length}`; i++) {
@@ -333,9 +340,15 @@ for(let i = 0; i < `${asabenehChallenges2020['author']['titles'].length}`; i++) 
 // skill
 let skillDiv = document.createElement('div')
 skillDiv.className = 'skill_div'
-skillDiv.textContent = 'Skills'
-skillDiv.style.marginRight = '6rem'
+skillDiv.style.marginRight = '4rem'
+skillDiv.style.marginTop = '1rem'
 skillsDiv.appendChild(skillDiv)
+
+let skillText = document.createElement('p')
+skillText.className = 'skill_text'
+skillText.textContent = 'Skills'
+skillText.style.fontWeight = 'bold'
+skillDiv.appendChild(skillText)
 
 let skillArr
 for(let i = 0; i < `${asabenehChallenges2020['author']['skills'].length}`; i++) {
@@ -348,9 +361,14 @@ for(let i = 0; i < `${asabenehChallenges2020['author']['skills'].length}`; i++) 
 // qualification
 let qualificationDiv = document.createElement('div')
 qualificationDiv.className = 'qualification_div'
-qualificationDiv.textContent = 'Qualifications'
-qualificationDiv.style.marginRight = '6rem'
+qualificationDiv.style.marginTop = '1rem'
 skillsDiv.appendChild(qualificationDiv)
+
+let qualiText = document.createElement('p')
+qualiText.className = 'title_text'
+qualiText.textContent = 'Qualifications'
+qualiText.style.fontWeight = 'bold'
+qualificationDiv.appendChild(qualiText)
 
 let quaArr
 for(let i = 0; i < `${asabenehChallenges2020['author']['qualifications'].length}`; i++) {
@@ -365,13 +383,13 @@ let keywords = document.createElement('p')
 keywords.className = 'keywords'
 keywords.style.fontWeight = 'bold'
 keywords.textContent = 'Keywords'
-keywords.style.marginLeft = '10rem'
+keywords.style.marginLeft = '22rem'
 document.body.appendChild(keywords)
 
   let keyItem = document.createElement('div')
 keyItem.style.display = 'flex'
 keyItem.style.flexWrap = 'wrap'
-keyItem.style.margin = '0 8rem 0 11.5rem'
+keyItem.style.margin = '0 14rem 0 23rem'
   document.body.appendChild(keyItem)
 
   //key items

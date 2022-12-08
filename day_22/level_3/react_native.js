@@ -5,7 +5,7 @@ daysOfReactNative.className = 'days_of_JS'
 daysOfReactNative.style.display ='flex'
 daysOfReactNative.style.margin ='0 auto'
 daysOfReactNative.style.borderTop ='5px solid white'
-daysOfReactNative.style.width ='70%'
+daysOfReactNative.style.width ='50%'
 daysOfReactNative.style.padding ='0.4rem 0.8rem'
 daysOfReactNative.style.justifyContent ='space-between'
 daysOfReactNative.style.backgroundColor ='#fd5e53'
@@ -16,7 +16,6 @@ mainDiv.appendChild(daysOfReactNative)
 let reactNativeTitle = document.createElement('p')
 reactNativeTitle.className = 'js_title'
 reactNativeTitle.textContent = `${asabenehChallenges2020.challenges[4].name}`
-reactNativeTitle.style.textDecoration = 'underline'
 daysOfReactNative.appendChild(reactNativeTitle)
 
 //The <details> tag specifies additional details that the user can open and close on demand.
@@ -39,16 +38,13 @@ reactNativeDetails.appendChild(reactNativeDetailsSummary)
 
 
 //React Native summary para
-let reactNativeSummaryPara1 = document.createElement('p')
-let reactNativeSummaryPara2 = document.createElement('p')
+let rnSummaryArr
+for(let i = 0; i < `${asabenehChallenges2020.challenges[4].topics.length}`; i++) {
+  rnSummaryArr = document.createElement('p')
+  rnSummaryArr.textContent = `${asabenehChallenges2020.challenges[4].topics[i]}`
+  reactNativeDetails.appendChild(rnSummaryArr)
+}
 
-reactNativeSummaryPara1.className = 'python_summary_para'
-reactNativeSummaryPara2.className = 'python_summary_para'
-
-reactNativeSummaryPara1.textContent = `${asabenehChallenges2020.challenges[4].topics[0]}`
-reactNativeSummaryPara2.textContent = `${asabenehChallenges2020.challenges[4].topics[1]}`
-
-reactNativeDetails.append(reactNativeSummaryPara1, reactNativeSummaryPara2)
 
 //react native status
 let reactNativeStatus = document.createElement('p')

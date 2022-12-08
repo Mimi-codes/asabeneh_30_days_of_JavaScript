@@ -5,7 +5,7 @@ daysOfJavaScript.className = 'days_of_JS'
 daysOfJavaScript.style.display ='flex'
 daysOfJavaScript.style.margin ='0 auto'
 daysOfJavaScript.style.borderTop ='5px solid white'
-daysOfJavaScript.style.width ='70%'
+daysOfJavaScript.style.width ='50%'
 daysOfJavaScript.style.padding ='0.4rem 0.8rem'
 daysOfJavaScript.style.justifyContent ='space-between'
 daysOfJavaScript.style.backgroundColor ='#f7dc5c'
@@ -17,6 +17,7 @@ let javaScriptTitle = document.createElement('p')
 javaScriptTitle.className = 'js_title'
 javaScriptTitle.textContent = `${asabenehChallenges2020.challenges[1].name}`
 javaScriptTitle.style.textDecoration = 'underline'
+javaScriptTitle.style.color = '#551a8b'
 daysOfJavaScript.appendChild(javaScriptTitle)
 
 //The <details> tag specifies additional details that the user can open and close on demand.
