@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./assets/galaxy.gif');
+}
+
+h4 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.input_div {
+    margin-top: 3rem;
+    display: flex;
+justify-content: center;
+}
+
+.input_bar {
+    width: 12rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    border: none;
+}
+
+select {
+    border-radius: 5px;
+    padding: 0.3rem 0.6rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    background: #6d6c6d;
+    color: white;
+}
+
+.output_div {
+    background-color: rgba(38, 37, 38, 0.43);
+    display: flex;
+margin-top: 1rem;
+margin:1rem auto;
+width: 50%
+}
+
+.earth_img {
+    width: 40%;
+    margin: 2.5rem auto;
+}
