@@ -92,35 +92,3 @@ else if(selectVal === 'jupiter') {
     image.src = './assets/moon.png'
 }
 })
-  /*
-    let inputValue = input.value
-    let selectValue = select.options[select.selectedIndex].innerText
-   
-    // let selectValue = select.options[select.selectedIndex].innerText
-    if(inputValue === '') {
-        errorMessage.textContent = 'Mass is required' 
-    errorMessage.style.color = 'white'
-//    errorMessage.style.backgroundColor = 'gray' 
-    errorMessage.style.textAlign = 'center'
-    image.src = ''
-    // errorDiv.append(errorMessage)
-} else if (selectValue = 'none') {
-    errorMessage.textContent = 'You did not choose a planet yet'
-    errorMessage.style.color = 'white'
-    //    errorMessage.style.backgroundColor = 'gray' 
-        errorMessage.style.textAlign = 'center'
-        image.src = ''
-}   else if (selectValue === 'Mercury') {
-    // checkError()
-    output.textContent = `${inputValue} * 3.61 N`
-        output.style.color = 'white'
-        image.src = './assets/mercury.png'
-        }
-        const checkError = () => {
-    output.textContent = `The weight of the object on ${
-        option.options[option.selectedIndex].text
-      } is`;
-   
-}
-*/
-// let a = select.options[select.selectedIndex].innerText
