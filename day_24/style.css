@@ -36,6 +36,10 @@ select {
     margin-right: 0.3rem;
 }
 
+select > option {
+    text-transform: capitalize;
+}
+
 .btn {
     border-radius: 5px;
     padding: 0.4rem 0.8rem;
@@ -44,7 +48,7 @@ select {
     color: white;
 }
 
-.output_div {
+.container {
     background-color: rgba(38, 37, 38, 0.43);
     display: flex;
 margin-top: 1rem;
@@ -52,7 +56,13 @@ margin:1rem auto;
 width: 50%
 }
 
-.earth_img {
+.error_div {
+    background: gray;
+    padding: 1rem;
+    margin: 0.5rem auto;
+}
+
+.image {
     width: 40%;
     margin: 2.5rem auto;
 }
