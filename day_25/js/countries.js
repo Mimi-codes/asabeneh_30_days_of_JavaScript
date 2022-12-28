@@ -2076,103 +2076,116 @@ populationText.style.marginTop = '0.5rem'
 const outputDiv = document.createElement('div')
 outputDiv.className = 'output_div'
 outputDiv.style.fontWeight = '600'
-// outputDiv.style.textAlign = 'center'
 outputDiv.style.marginTop = '1rem'
-// outputDiv.style.display = 'flex'
 
 
 let btnPopulation = document.getElementsByClassName('btn_population')[0]
+btnPopulation.style.display = 'flex' 
+btnPopulation.style.justifyContent = 'space-around' 
+btnPopulation.style.marginTop = '1rem' 
 
+const nameDiv = document.createElement('div')
+const populationDiv = document.createElement('div')
+
+let btnLanguage = document.getElementsByClassName('btn_language')[0]
+btnLanguage.style.display = 'flex' 
+btnLanguage.style.justifyContent = 'space-around' 
+btnLanguage.style.marginTop = '1rem' 
+
+const languageDiv = document.createElement('div')
+const totalDiv = document.createElement('div')
 
 buttonA.addEventListener('click', () => {
+// let popu = document.createTextNode('10 most populated countries in the world')
+
 let arr = [];
 countries.sort(function(b, a) {
  arr = a.population - b.population
  return arr
 })
 let slice = countries.slice(0, 10)
-slice.forEach((country, index) => {
+slice.forEach((country) => {
 	let itemP = document.createElement('p')
-	let itemPText = document.createTextNode(`${country.name} ${country.population.toLocaleString('en-US')}`)
+	itemP.className = 'item_p'
+	itemP.style.paddingTop = '0.8rem' 
+	let itemPText = document.createTextNode(`${country.name} `)
+	itemP.style.marginLeft = '4rem'
 itemP.appendChild(itemPText)
-	btnPopulation.append(itemP)
+	nameDiv.append(itemP)
 })
 
-	
+
+let arr_1 = [];
+countries.sort(function(b, a) {
+ arr_1 = a.population - b.population
+ return arr_1
 })
+let slice_1 = countries.slice(0, 10)
+slice_1.forEach((country) => {
+	let itemP = document.createElement('p')
+	itemP.className = 'item_p'
+	itemP.style.paddingTop = '0.8rem' 
+	let itemPText = document.createTextNode(`${country.population.toLocaleString('en-US')} `)
+	itemP.style.marginLeft = '4rem'
+itemP.appendChild(itemPText)
+	populationDiv.append(itemP)
+})
+
+})
+
+
+
+const lang = [
+	{ data: 'English', status: '91' },
+	{ data: 'French', status: '45' },
+	{ data: 'Arabic', status: '25' },
+	{ data: 'Spanish', status: '24' },
+	{ data: 'Portuguese', status: '9' },
+	{ data: 'Russian', status: '9' },
+	{ data: 'Dutch', status: '8' },
+	{ data: 'German', status: '7' },
+	{ data: 'Chinese', status: '5' },
+	{ data: 'Serbian', status: '4' },
+  ];
+  
+  let counter = 0;
+  for (const obj of lang) {
+	if (obj.data === 'Spanish') counter++;
+  }
+  
 
 buttonB.addEventListener('click', () => {
-	for(const lang in countries) {
-		let spokenLanguages;
-		spokenLanguages = lang['languages']
-		if(spokenLanguages.includes('English')) {
 
-			outputDiv.textContent = `${spokenLanguages} +  "<br />"`
-	
-		}
-}
+
+lang.forEach((item) => {
+	let itemP = document.createElement('p')
+	itemP.className = 'item_p'
+	itemP.style.paddingTop = '0.8rem' 
+	let itemPText = document.createTextNode(`${item.data} `)
+	itemP.style.marginLeft = '4rem'
+itemP.appendChild(itemPText)
+	languageDiv.append(itemP)
 })
 
-
-
-
-	// for(const lang of countries) {}
-		// let spokenLanguages;
-		// spokenLanguages = lang['languages']
-
-		// countries.forEach((e) => {
-			// console.log(`${e.languages}`);
-			
-		// outputDiv.textContent = `${e.languages}`
-		// });
-
-		// spokenLanguages.slice(0, 10)
-
-	// outputDiv.textContent 
-	// += `${spokenLanguages}`
-	// }
-	// alert(arr)
-
-
-
-// outputDiv.textContent = `${arr}`
-/*
-var arr = [];
-for (var p in countries) {
-    arr.push(countries[p]['population']);
-}
-
-arr.sort(function(a,b){return b - a});
-arr.slice(0, 10)
-outputDiv.textContent = `${arr}`
-
-
-
-
-
-// console.log(countries_)
-
-// button click actions
-buttonA.addEventListener('click', () => {
-	countries.forEach((element, index) => {
-		outputDiv.textContent += element.name
-		})
+lang.forEach((item) => {
+	let itemP = document.createElement('p')
+	itemP.className = 'item_p'
+	itemP.style.paddingTop = '0.8rem' 
+	let itemPText = document.createTextNode(`${item.status} `)
+	itemP.style.marginLeft = '4rem'
+itemP.appendChild(itemPText)
+	totalDiv.append(itemP)
+})
 
 })
 
 
 
-
-console.log(arr.slice(0, 10));
-
-
-for (const key in countries) {
-	// console.log(`${key} -> ${countries[key]['name']}`)
-  }
-*/
 
 document.body.append(heading, population)
 population.append(buttonA, buttonB, populationText)
 heading.append(heading_text, heading_para)
-outputDiv.append(btnPopulation)
+btnPopulation.append(nameDiv, populationDiv)
+btnLanguage.append(languageDiv, totalDiv)
+outputDiv.append(btnPopulation, btnLanguage)
 document.body.append(outputDiv)
