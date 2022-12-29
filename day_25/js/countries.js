@@ -2013,179 +2013,88 @@
   ]
 
 
+  //BODY
+  const body = document.querySelector('body')
+  body.style.fontFamily = "'Montserrat', sans-serif"
 
-const body = document.querySelector('body')
-body.style.fontFamily =  "'Montserrat', sans-serif";
+  //header
+  const header = document.createElement('div')
+  header.className = 'header'
+  header.style.textAlign = 'center'
+  header.style.backgroundColor = '#f0f0f0'
+header.style.paddingBottom = '1rem'
+header.style.borderBottom = '2px solid gray'
+  
+  //header text
+  const heading_text = document.createElement('h4')
+  heading_text.className = 'heading_text'
+  heading_text.style.color = ' #ffa606'
+  heading_text.style.marginTop = '1rem'
+  heading_text.style.fontSize = '2rem'
+  heading_text.style.textTransform = 'capitalize'
+  heading_text.textContent = 'world countries data'
 
-const heading =  document.createElement('div')
-heading.className = 'heading'
-heading.style.backgroundColor = '#f0f0f0'
-heading.style.paddingBottom = '2rem'
-heading.style.borderBottom = '2px solid gray'
-
-
-
-const heading_text = document.createElement('h4')
-heading_text.textContent = 'world countries data'
-heading_text.className = 'heading_text'
-heading_text.style.textAlign = 'center'
-heading_text.style.color = ' #ffa606'
-heading_text.style.marginTop = '1rem'
-heading_text.style.fontSize = '2rem'
-heading_text.style.textTransform = 'capitalize'
-
-
-const heading_para = document.createElement('p')
-heading_para.className = 'heading_para'
-heading_para.textContent = `Currently, we have ${countries.length} countries`
-heading_para.style.fontWeight = '600'
-heading_para.style.textAlign = 'center'
+  //heading_para
+  const heading_para = document.createElement('p')
+  heading_para.className = 'heading_para'
+  heading_para.style.color = ''
+  heading_para.textContent = `Currently, we have ${countries.length} countries`
+  heading_para.style.fontWeight = '600'
 heading_para.style.marginTop = '0.4rem'
 
-
-const population = document.createElement('div')
-population.className = 'population_div'
-population.style.backgroundColor = 'white'
-population.style.justifyContent = 'center'
-population.style.textAlign = 'center'
-population.style.padding = '1.2rem'
-population.style.borderBottom = '2px solid gray'
+//button divs
+const buttonDivs = document.createElement('div')
+buttonDivs.style.paddingTop = '1rem'
+buttonDivs.style.textAlign = 'center'
+buttonDivs.style.paddingBottom = '0.5rem'
+buttonDivs.style.backgroundColor = 'white'
+buttonDivs.style.borderBottom = '2px solid gray'
 
 //buttons
-const buttonA = document.querySelector('.btn_a')
-buttonA.style.marginRight = '0.6rem'
-buttonA.style.padding = '0.5rem 0.8rem'
-buttonA.style.border = 'none'
-buttonA.style.backgroundColor = '#f2a93b'
-buttonA.style.borderRadius = '3px'
+const btn_div = document.createElement('div')
+btn_div.className = 'btn_div'
 
-const buttonB = document.querySelector('.btn_b')
-buttonB.style.marginRight = '0.5rem'
-buttonB.style.padding = '0.5rem 0.8rem'
-buttonB.style.border = 'none'
-buttonB.style.backgroundColor = '#f2a93b'
-buttonB.style.borderRadius = '3px'
+const population_btn = document.querySelector('.btn_population')
+population_btn.style.marginRight = '0.6rem'
+population_btn.style.padding = '0.5rem 0.8rem'
+population_btn.style.border = 'none'
+population_btn.style.justifyContent = 'center'
+population_btn.style.backgroundColor = '#f2a93b'
+population_btn.style.borderRadius = '3px'
 
-const populationText = document.createElement('p')
-populationText.className = 'population_text'
-populationText.textContent = '10 most spoken languages in the world'
-populationText.style.fontWeight = '600'
-populationText.style.marginTop = '0.5rem'
+const language_btn = document.querySelector('.btn_language')
+language_btn.style.marginRight = '0.6rem'
+language_btn.style.padding = '0.5rem 0.8rem'
+language_btn.style.border = 'none'
+language_btn.style.backgroundColor = '#f2a93b'
+language_btn.style.borderRadius = '3px'
 
-//output
-const outputDiv = document.createElement('div')
-outputDiv.className = 'output_div'
-outputDiv.style.fontWeight = '600'
-outputDiv.style.marginTop = '1rem'
+//button text
+const population_para = document.createElement('p')
+population_para.style.paddingTop = '0.5rem'
+// population_para.textContent = '10 most populated countries in the world'
 
-
-let btnPopulation = document.getElementsByClassName('btn_population')[0]
-btnPopulation.style.display = 'flex' 
-btnPopulation.style.justifyContent = 'space-around' 
-btnPopulation.style.marginTop = '1rem' 
-
-const nameDiv = document.createElement('div')
-const populationDiv = document.createElement('div')
-
-let btnLanguage = document.getElementsByClassName('btn_language')[0]
-btnLanguage.style.display = 'flex' 
-btnLanguage.style.justifyContent = 'space-around' 
-btnLanguage.style.marginTop = '1rem' 
-
-const languageDiv = document.createElement('div')
-const totalDiv = document.createElement('div')
-
-buttonA.addEventListener('click', () => {
-// let popu = document.createTextNode('10 most populated countries in the world')
-
-let arr = [];
-countries.sort(function(b, a) {
- arr = a.population - b.population
- return arr
-})
-let slice = countries.slice(0, 10)
-slice.forEach((country) => {
-	let itemP = document.createElement('p')
-	itemP.className = 'item_p'
-	itemP.style.paddingTop = '0.8rem' 
-	let itemPText = document.createTextNode(`${country.name} `)
-	itemP.style.marginLeft = '4rem'
-itemP.appendChild(itemPText)
-	nameDiv.append(itemP)
+population_btn.addEventListener('click', (e) => {
+	let click = e.type
+if(e.type === click) {
+population_para.textContent = '10 most populated countries in the world'
+}
 })
 
-
-let arr_1 = [];
-countries.sort(function(b, a) {
- arr_1 = a.population - b.population
- return arr_1
-})
-let slice_1 = countries.slice(0, 10)
-slice_1.forEach((country) => {
-	let itemP = document.createElement('p')
-	itemP.className = 'item_p'
-	itemP.style.paddingTop = '0.8rem' 
-	let itemPText = document.createTextNode(`${country.population.toLocaleString('en-US')} `)
-	itemP.style.marginLeft = '4rem'
-itemP.appendChild(itemPText)
-	populationDiv.append(itemP)
-})
-
+language_btn.addEventListener('click', (e) => {
+	let click = e.type
+if(e.type === click) {
+population_para.textContent = '10 most spoken languages in the world'
+}
 })
 
 
 
-const lang = [
-	{ data: 'English', status: '91' },
-	{ data: 'French', status: '45' },
-	{ data: 'Arabic', status: '25' },
-	{ data: 'Spanish', status: '24' },
-	{ data: 'Portuguese', status: '9' },
-	{ data: 'Russian', status: '9' },
-	{ data: 'Dutch', status: '8' },
-	{ data: 'German', status: '7' },
-	{ data: 'Chinese', status: '5' },
-	{ data: 'Serbian', status: '4' },
-  ];
-  
-  let counter = 0;
-  for (const obj of lang) {
-	if (obj.data === 'Spanish') counter++;
-  }
-  
+document.body.append(header, buttonDivs)
+header.append(heading_text, heading_para)
+buttonDivs.append(btn_div, population_para)
+btn_div.append(population_btn, language_btn)
+// btnPopulation.append(nameDiv, populationDiv)
+// btnLanguage.append(languageDiv, totalDiv)
+// outputDiv.append(btnPopulation, btnLanguage)
 
-buttonB.addEventListener('click', () => {
-
-
-lang.forEach((item) => {
-	let itemP = document.createElement('p')
-	itemP.className = 'item_p'
-	itemP.style.paddingTop = '0.8rem' 
-	let itemPText = document.createTextNode(`${item.data} `)
-	itemP.style.marginLeft = '4rem'
-itemP.appendChild(itemPText)
-	languageDiv.append(itemP)
-})
-
-lang.forEach((item) => {
-	let itemP = document.createElement('p')
-	itemP.className = 'item_p'
-	itemP.style.paddingTop = '0.8rem' 
-	let itemPText = document.createTextNode(`${item.status} `)
-	itemP.style.marginLeft = '4rem'
-itemP.appendChild(itemPText)
-	totalDiv.append(itemP)
-})
-
-})
-
-
-
-
-document.body.append(heading, population)
-population.append(buttonA, buttonB, populationText)
-heading.append(heading_text, heading_para)
-btnPopulation.append(nameDiv, populationDiv)
-btnLanguage.append(languageDiv, totalDiv)
-outputDiv.append(btnPopulation, btnLanguage)
-document.body.append(outputDiv)
