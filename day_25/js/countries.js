@@ -2088,6 +2088,7 @@ languageOutputDiv.style.display = 'flex'
 const outputDiv = document.createElement('div')
 outputDiv.className = 'output_div'
 outputDiv.style.display = 'flex'
+outputDiv.style.justifyContent = 'center'
 
 //button text
 const population_para = document.createElement('p')
