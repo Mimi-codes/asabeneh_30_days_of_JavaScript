@@ -2,7 +2,7 @@ const body = document.querySelector("body")
 const h1 = document.querySelector('h1');
 const h2 = document.querySelector('h2');
 const p = document.querySelector("p");
-const lis = document.querySelectorAll("li")
+const list = document.querySelectorAll("li")
 
 //body styling
 body.style.textAlign = "center"
@@ -11,12 +11,12 @@ body.style.fontFamily = "sans-serif"
 //h1 chameleon styling
 h1.innerHTML = `Asabeneh Yetayeh challenges in <span id="year">2020<span>`
 let year = document.querySelector("#year");
-let color;
+// let color;
 const chameleon = () => {
     let random1 = Math.floor(Math.random() * 255)
     let random2 = Math.floor(Math.random() * 255)
     let random3 = Math.floor(Math.random() * 255)
-    color = `rgb(${random1},${random2},${random3})`
+    let color = `rgb(${random1},${random2},${random3})`
     year.style.color = color;
 }
 setInterval(chameleon, 1000)
@@ -38,7 +38,7 @@ const chameleon2 = () => {
 }
 setInterval(chameleon2, 1000)
 
-lis.forEach(li => {
+list.forEach(li => {
     li.style.listStyle = "none";
     li.style.border = "1px solid gray";
     li.style.margin = "0 auto"

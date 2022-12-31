@@ -54,6 +54,7 @@ containerDiv.style.textAlign = "center"
             input.value = ""
             message.innerHTML = "";
             for (let i = 0; i <= val; i++) {
+                //creates/generates number boxes
                 if (i % 2 === 0) {
                     let box = document.createElement("div")
                     box.textContent = i
@@ -89,5 +90,5 @@ containerDiv.style.textAlign = "center"
             message.textContent = "Please enter number values only";
             message.style.color = "red"
         }
-    })
+    }) 
     

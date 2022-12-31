@@ -74,6 +74,16 @@ const removeItem = (index) => {
 console.log(removeItem(1));
 
 //num 10
+const sumOfNumbers = (num) => {
+    let sum = 0
+    for(let i = 0; i < num.length; i++) {
+        sum += num[i];
+    }
+    return sum
+    }
+    
+    let numbers = [1, 2, 3, 4, 5]
+    console.log(sumOfNumbers(numbers))
 //num 11
 //num 12
 //num 13

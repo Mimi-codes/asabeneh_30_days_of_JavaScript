@@ -1,5 +1,5 @@
-import { countries } from "./countries";
-console.log(countries)
+import { countries } from "./countries.js";
+
 
   //BODY
   const body = document.querySelector('body')
@@ -38,6 +38,7 @@ buttonDivs.style.paddingBottom = '0.5rem'
 buttonDivs.style.backgroundColor = 'white'
 buttonDivs.style.borderBottom = '2px solid gray'
 
+
 //buttons
 const btn_div = document.createElement('div')
 btn_div.className = 'btn_div'
@@ -58,7 +59,7 @@ language_btn.style.backgroundColor = '#f2a93b'
 language_btn.style.borderRadius = '3px'
 
 //output div
-/*
+
 const populationOutputDiv = document.createElement('div')
 populationOutputDiv.className = 'output_div'
 populationOutputDiv.style.fontWeight = '600'
@@ -70,11 +71,12 @@ languageOutputDiv.className = 'output_div'
 languageOutputDiv.style.fontWeight = '600'
 languageOutputDiv.style.marginTop = '1rem'
 languageOutputDiv.style.display = 'flex'
-*/
+
 
 const outputDiv = document.createElement('div')
 outputDiv.className = 'output_div'
 outputDiv.style.display = 'flex'
+outputDiv.style.justifyContent = 'center'
 
 //button text
 const population_para = document.createElement('p')
@@ -187,4 +189,3 @@ btn_div.append(population_btn, language_btn)
 // languageOutputDiv.append(language_name, language_total)
 // btnLanguage.append(languageDiv, totalDiv)
 outputDiv.append(country_name, country_population, language_name, language_total)
-

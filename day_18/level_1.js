@@ -1,8 +1,10 @@
 const countriesAPI = 'https://restcountries.com/v2/all';
 //num 1
-fetch(countriesAPI).then((data) => {
+fetch(countriesAPI)
+.then((data) => {
     return data.json();
-}).then((formattedData) => {
+})
+.then((formattedData) => {
     let countryDetails = '';
     formattedData.map((val) => {
         countryDetails += `
