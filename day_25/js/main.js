@@ -70,10 +70,12 @@ output_div.className = 'output_div'
 const population_output_div = document.createElement('div')
 population_output_div.className = 'population_output_div'
 population_output_div.style.display = 'flex'
+population_output_div.style.justifyContent = 'center'
 
 const language_output_div = document.createElement('div')
 language_output_div.className = 'language_output_div'
 language_output_div.style.display = 'flex'
+language_output_div.style.justifyContent = 'center'
 
 const country_name = document.createElement("div");
 country_name.className = "country_name";
@@ -99,6 +101,10 @@ const lang = [
     { data: "Serbian", status: "4" },
   ];
 
+
+
+
+
 let arr = [];
 countries.sort(function (b, a) {
   arr = a.population - b.population;
@@ -116,11 +122,7 @@ slice.forEach((country) => {
   country_name.append(itemP);
 });
 
-let arr_1 = [];
-countries.sort(function (b, a) {
-  arr_1 = a.population - b.population;
-  return arr_1;
-});
+
 let slice_1 = countries.slice(0, 10);
 slice_1.forEach((country) => {
   let itemP = document.createElement("p");
@@ -132,7 +134,39 @@ slice_1.forEach((country) => {
   itemP.style.marginLeft = "4rem";
   itemP.appendChild(itemPText);
   country_population.append(itemP);
+
 });
+
+//total sum of population
+let pop = []
+for(let i = 0; i < slice.length; i++) {
+pop.push(slice[i].population)
+}
+
+let sum = 0
+for (let i = 0; i < pop.length; i++) {
+    sum += pop[i];
+}
+console.log(sum);
+const bar_div = document.createElement('div')
+bar_div.className = 'bar_div'
+const bar = document.createElement('div')
+bar.style.backgroundColor = 'green'
+
+let percentage = slice.forEach((country) => {
+    const bar = document.createElement('div')
+    bar.style.backgroundColor = 'green'
+    bar.className = "bar_item";
+    bar.style.paddingTop = "0.8rem";
+    bar.style.marginTop = "1rem";
+    // let itemPText = document.createTextNode(`${(country.population/sum) * 100} `);
+    bar.style.marginLeft = "4rem";
+    bar.style.width = `90%`
+    // bar.appendChild(itemPText);
+    bar_div.append(bar);
+  });
+
+
 
 
 lang.forEach((item) => {
@@ -161,7 +195,7 @@ if(e.type === click) {
     text_para.textContent = '10 most populated countries in the world'
     // console.log(text_para)
     // console.log(`${countries.length}`)
-population_output_div.append(country_name, country_population)
+population_output_div.append(country_name, bar_div, country_population)
 language_output_div.textContent = ''
 }
 })
@@ -185,9 +219,4 @@ header.append(header_title, header_para)
 button_div.append(buttons, text_para)
 buttons.append(population_btn, languages_btn)
 output_div.append(population_output_div, language_output_div)
-
-/*population_output_div.append(country_name,
-country_population,
-language_name,
-language_total)
-*/
+// bar_div.append(bar)
