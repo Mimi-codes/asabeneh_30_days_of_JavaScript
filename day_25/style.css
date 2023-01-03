@@ -11,3 +11,14 @@ body {
 h4 {
     text-transform: capitalize;
 }
+
+
+.country_name {
+    width: 200px;
+}
+
+.graph {
+    background-color: #f2a93b;
+    padding: 10px;
+    text-align: center;
+}
