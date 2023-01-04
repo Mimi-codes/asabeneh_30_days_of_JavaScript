@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans:wght@200&family=Roboto:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-    font-family: 'Montserrat, sans-serif';
+    font-family: 'Roboto', sans-serif;
 }
 
 .hero_section {
@@ -19,10 +20,12 @@ h4 {
     padding-top: 4rem;
     font-size: 2rem;
     letter-spacing: 10px;
+    color: #faf9f9;
 }
 
 .total_countries {
 padding-top: 0.8rem;
+color: #faf9f9;
 }
 
 .buttons {
@@ -36,6 +39,8 @@ padding-top: 0.8rem;
     border-radius: 0.2rem;
     text-transform: uppercase;
     border: none;
+    background: #541cb3;
+    color: #faf9f9;
 }
 
 .text_btn {
@@ -46,7 +51,20 @@ padding-top: 0.8rem;
     margin-top: 1rem;
 }
 
+input {
+    background: #f5f2f3;
+}
+
 input::placeholder {
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
+    color: #d9dbde;
 }
+
+/*
+btn-1 #541cb3
+btn-2 #895be6
+num #86b75a
+placeholder #d9dbde
+body #ffffe3
+*/
