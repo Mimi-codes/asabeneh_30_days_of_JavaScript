@@ -117,7 +117,7 @@ countries.slice(0, 10).map((country) => {
 population_btn.addEventListener("click", (e) => {
   let click = e.type;
   if (e.type === click) {
-    text_para.textContent = "10 most populated countries in the world";
+    text_para.textContent = `${slice.length} most populated countries in the world`;
     population_output_div.append(population);
     language_output_div.textContent = "";
   }
@@ -207,7 +207,7 @@ lang.map((item) => {
 languages_btn.addEventListener("click", (e) => {
   let check = e.type;
   if (e.type === check) {
-    text_para.textContent = "10 most spoken languages in the world";
+    text_para.textContent = `${lang.length} most spoken languages in the world`;
     population_output_div.textContent = "";
     language_output_div.append(language_name);
   }
