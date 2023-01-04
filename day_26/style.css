@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat, sans-serif';
+}
+
+.hero_section {
+    background: gray;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+h4 {
+    text-transform: uppercase;
+    padding-top: 4rem;
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+
+.total_countries {
+padding-top: 0.8rem;
+}
+
+.buttons {
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.start_btn, .search_btn {
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    border: none;
+}
+
+.text_btn {
+    border: none;
+    border-radius: 50px;
+    padding: 0.8rem;
+    width: 22rem;
+    margin-top: 1rem;
+}
+
+input::placeholder {
+    text-align: center;
+    font-weight: 600;
+}
