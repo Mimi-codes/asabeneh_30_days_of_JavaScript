@@ -1,38 +1,11 @@
 import { countries } from "./countries.js";
 
-/*const body = document.querySelector('body')
-body.style.fontFamily = "'Montserrat', sans-serif"
-
-const hero_section = document.createElement('div')
-hero_section.className = 'hero_section'
-hero_section.style.textAlign = 'center'
-
-const title = document.createElement('h4')
-title.className = 'title'
-title.style.textTransform = 'uppercase'
-title.style.paddingTop = '4rem'
-title.style.fontSize = '1.5rem'
-title.style.color = ''
-title.textContent = 'world countries list'
-
-const total_countries = document.createElement('p')
-total_countries.className = 'total_countries'
-total_countries.textContent = `Total Number of countries: ${countries.length}`
- 
-
-
-document.body.append(hero_section)
-hero_section.append(title, total_countries)
-// console.log(countries)
-// alert('Open the console and check if the countries has been loaded')
-*/
-
 const total_countries = document.querySelector(".total_countries");
 total_countries.textContent = `Total Number of countries: ${countries.length}`;
 
 const countries_start = document.querySelector(".countries_start");
 
-countries_start.textContent = `Countries containing are `;
+countries_start.textContent = ``;
 
 const start_btn = document.querySelector(".start_btn");
 start_btn.addEventListener("click", (e) => {
@@ -122,62 +95,163 @@ const input = document.querySelector(".text_btn");
 
 const outputA = document.createElement("div");
 
-outputA.className = 'output_a'
-outputA.style.textAlign = "center"
-outputA.style.marginLeft = '4.5%'
-outputA.style.marginTop = '5%'
-outputA.style.display = 'inline-grid'
-outputA.style.gridTemplateColumns = 'auto auto auto auto auto auto'
+outputA.className = "output_a";
+outputA.style.textAlign = "center";
+outputA.style.marginLeft = "4.5%";
+outputA.style.marginTop = "5%";
+outputA.style.display = "inline-grid";
+outputA.style.gridTemplateColumns = "auto auto auto auto auto auto";
 
 const outputB = document.createElement("div");
-outputB.style.textAlign = "center"
-outputB.style.marginLeft = '4.5%'
-outputB.style.marginTop = '5%'
-outputB.style.display = 'inline-grid'
-outputB.style.gridTemplateColumns = 'auto auto auto auto auto auto'
+outputB.style.textAlign = "center";
+outputB.style.marginLeft = "4.5%";
+outputB.style.marginTop = "5%";
+outputB.style.display = "inline-grid";
+outputB.style.gridTemplateColumns = "auto auto auto auto auto auto";
 
 const outputC = document.createElement("div");
-outputC.style.textAlign = "center"
-outputC.style.marginLeft = '4.5%'
-outputC.style.marginTop = '5%'
-outputC.style.display = 'inline-grid'
-outputC.style.gridTemplateColumns = 'auto auto auto auto auto auto'
+outputC.style.textAlign = "center";
+outputC.style.marginLeft = "4.5%";
+outputC.style.marginTop = "5%";
+outputC.style.display = "inline-grid";
+outputC.style.gridTemplateColumns = "auto auto auto auto auto auto";
 
 const outputD = document.createElement("div");
-outputD.style.textAlign = "center"
-outputD.style.marginLeft = '4.5%'
-outputD.style.marginTop = '5%'
-outputD.style.display = 'inline-grid'
-outputD.style.gridTemplateColumns = 'auto auto auto auto auto auto'
+outputD.style.textAlign = "center";
+outputD.style.marginLeft = "4.5%";
+outputD.style.marginTop = "5%";
+outputD.style.display = "inline-grid";
+outputD.style.gridTemplateColumns = "auto auto auto auto auto auto";
 
 const outputE = document.createElement("div");
-outputE.style.textAlign = "center"
-outputE.style.marginLeft = '4.5%'
-outputE.style.marginTop = '5%'
-outputE.style.display = 'inline-grid'
-outputE.style.gridTemplateColumns = 'auto auto auto auto auto auto'
+outputE.style.textAlign = "center";
+outputE.style.marginLeft = "4.5%";
+outputE.style.marginTop = "5%";
+outputE.style.display = "inline-grid";
+outputE.style.gridTemplateColumns = "auto auto auto auto auto auto";
 
 const outputF = document.createElement("div");
+outputF.style.textAlign = "center";
+outputF.style.marginTop = "5%";
+outputF.style.display = "inline-grid";
+outputF.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputG = document.createElement("div");
+outputG.style.textAlign = "center";
+outputG.style.marginTop = "5%";
+outputG.style.display = "inline-grid";
+outputG.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputH = document.createElement("div");
+outputH.style.textAlign = "center";
+outputH.style.marginTop = "5%";
+outputH.style.display = "inline-grid";
+outputH.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputI = document.createElement("div");
+outputI.style.textAlign = "center";
+outputI.style.marginTop = "5%";
+outputI.style.display = "inline-grid";
+outputI.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputJ = document.createElement("div");
+outputJ.style.textAlign = "center";
+outputJ.style.marginTop = "5%";
+outputJ.style.display = "inline-grid";
+outputJ.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputK = document.createElement("div");
+outputK.style.textAlign = "center";
+outputK.style.marginTop = "5%";
+outputK.style.display = "inline-grid";
+outputK.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputL = document.createElement("div");
+outputL.style.textAlign = "center";
+outputL.style.marginTop = "5%";
+outputL.style.display = "inline-grid";
+outputL.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputM = document.createElement("div");
+outputM.style.textAlign = "center";
+outputM.style.marginTop = "5%";
+outputM.style.display = "inline-grid";
+outputM.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputN = document.createElement("div");
+outputN.style.textAlign = "center";
+outputN.style.marginTop = "5%";
+outputN.style.display = "inline-grid";
+outputN.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputO = document.createElement("div");
+outputO.style.textAlign = "center";
+outputO.style.marginTop = "5%";
+outputO.style.display = "inline-grid";
+outputO.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputP = document.createElement("div");
+outputP.style.textAlign = "center";
+outputP.style.marginTop = "5%";
+outputP.style.display = "inline-grid";
+outputP.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputQ = document.createElement("div");
+outputQ.style.textAlign = "center";
+outputQ.style.marginTop = "5%";
+outputQ.style.display = "inline-grid";
+outputQ.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputR = document.createElement("div");
+outputR.style.textAlign = "center";
+outputR.style.marginTop = "5%";
+outputR.style.display = "inline-grid";
+outputR.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputS = document.createElement("div");
+outputS.style.textAlign = "center";
+outputS.style.marginTop = "5%";
+outputS.style.display = "inline-grid";
+outputS.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputT = document.createElement("div");
+outputT.style.textAlign = "center";
+outputT.style.marginTop = "5%";
+outputT.style.display = "inline-grid";
+outputT.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputU = document.createElement("div");
+outputU.style.textAlign = "center";
+outputU.style.marginTop = "5%";
+outputU.style.display = "inline-grid";
+outputU.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputV = document.createElement("div");
+outputV.style.textAlign = "center";
+outputV.style.marginTop = "5%";
+outputV.style.display = "inline-grid";
+outputV.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputW = document.createElement("div");
+outputW.style.textAlign = "center";
+outputW.style.marginTop = "5%";
+
 const outputX = document.createElement("div");
+outputX.style.textAlign = "center";
+outputX.style.marginTop = "5%";
+
 const outputY = document.createElement("div");
+outputY.style.textAlign = "center";
+outputY.style.marginTop = "5%";
+outputY.style.display = "inline-grid";
+outputY.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 const outputZ = document.createElement("div");
+outputZ.style.textAlign = "center";
+outputZ.style.marginTop = "5%";
+outputZ.style.display = "inline-grid";
+outputZ.style.gridTemplateColumns = "auto auto auto auto auto auto";
+
 document.body.append(
   outputA,
   outputB,
@@ -211,23 +285,23 @@ document.body.append(
 input.addEventListener("input", (e) => {
   let type = e.data;
   if (type === "A" || type === "a") {
-    countries_start.textContent = `Countries that starts with a are: ${startA.length}`;
+    countries_start.textContent = `Countries that starts with are: ${startA.length}`;
 
-    let aArray 
-    for(let i = 0; i < startA.length; i++) {
-        aArray = document.createElement('p');
-        aArray.className = 'countries'
-        aArray.style.padding = '2rem 0.5rem'
-        aArray.style.border = "1px solid #dbd9d9"
-        aArray.style.borderRadius = "5px"
-        aArray.style.fontWeight = "bold"
-        aArray.style.margin = "0.5rem"
-        aArray.style.width = "9rem"
-        aArray.textContent += `${startA[i]}`
-        outputA.appendChild(aArray)
+    let aArray;
+    for (let i = 0; i < startA.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+    //   aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startA[i]}`;
+      outputA.appendChild(aArray);
     }
 
-    outputA.append(aArray);
     outputB.textContent = "";
     outputC.textContent = "";
     outputD.textContent = "";
@@ -253,26 +327,23 @@ input.addEventListener("input", (e) => {
     outputX.textContent = "";
     outputY.textContent = "";
     outputZ.textContent = "";
-
-    
   } else if (type === "B" || type === "b") {
     countries_start.textContent = `Countries that starts with b are ${startB.length}`;
 
-    let aArray 
-    for(let i = 0; i < startB.length; i++) {
-         aArray = document.createElement('p');
-        aArray.className = 'countries'
-        aArray.style.padding = '2rem 0.5rem'
-        aArray.style.border = "1px solid #dbd9d9"
-        aArray.style.borderRadius = "5px"
-        aArray.style.fontWeight = "bold"
-        aArray.style.margin = "0.5rem"
-        aArray.style.width = "9rem"
-        aArray.textContent += `${startB[i]}`
-        outputB.appendChild(aArray)
+    let aArray;
+    for (let i = 0; i < startB.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startB[i]}`;
+      outputB.appendChild(aArray);
     }
     outputA.textContent = "";
-    outputB.append(aArray);
     outputC.textContent = "";
     outputD.textContent = "";
     outputE.textContent = "";
@@ -299,22 +370,21 @@ input.addEventListener("input", (e) => {
     outputZ.textContent = "";
   } else if (type === "C" || type === "c") {
     countries_start.textContent = `Countries that starts with c are ${startC.length}`;
-    let aArray 
-    for(let i = 0; i < startC.length; i++) {
-         aArray = document.createElement('p');
-        aArray.className = 'countries'
-        aArray.style.padding = '2rem 0.5rem'
-        aArray.style.border = "1px solid #dbd9d9"
-        aArray.style.borderRadius = "5px"
-        aArray.style.fontWeight = "bold"
-        aArray.style.margin = "0.5rem"
-        aArray.style.width = "9rem"
-        aArray.textContent += `${startC[i]}`
-        outputC.appendChild(aArray)
+    let aArray;
+    for (let i = 0; i < startC.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startC[i]}`;
+      outputC.appendChild(aArray);
     }
     outputA.textContent = "";
     outputB.textContent = "";
-    outputC.append(aArray);
     outputD.textContent = "";
     outputE.textContent = "";
     outputF.textContent = "";
@@ -340,24 +410,22 @@ input.addEventListener("input", (e) => {
     outputZ.textContent = "";
   } else if (type === "D" || type === "d") {
     countries_start.textContent = `Countries that starts with d are ${startD.length}`;
-    let aArray 
-    for(let i = 0; i < startD.length; i++) {
-         aArray = document.createElement('p');
-        aArray.className = 'countries'
-        aArray.style.padding = '2rem 0.5rem'
-        aArray.style.border = "1px solid #dbd9d9"
-        aArray.style.backgroundImage = "url('map_image.jpg')"
-        aArray.style.borderRadius = "5px"
-        aArray.style.fontWeight = "bold"
-        aArray.style.margin = "0.5rem"
-        aArray.style.width = "9rem"
-        aArray.textContent += `${startD[i]}`
-        outputD.appendChild(aArray)
+    let aArray;
+    for (let i = 0; i < startD.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startD[i]}`;
+      outputD.appendChild(aArray);
     }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
-    outputD.append(aArray);
     outputE.textContent = "";
     outputF.textContent = "";
     outputG.textContent = "";
@@ -383,11 +451,23 @@ input.addEventListener("input", (e) => {
   } else if (type === "E" || type === "e") {
     countries_start.textContent = `Countries that starts with e are ${startE.length}`;
 
+    let aArray;
+    for (let i = 0; i < startE.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startE[i]}`;
+      outputE.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
-    outputD.textContent = '';
-    outputE.append(startE);
+    outputD.textContent = "";
     outputF.textContent = "";
     outputG.textContent = "";
     outputH.textContent = "";
@@ -412,12 +492,24 @@ input.addEventListener("input", (e) => {
   } else if (type === "F" || type === "f") {
     countries_start.textContent = `Countries that starts with f are ${startF.length}`;
 
+    let aArray;
+    for (let i = 0; i < startF.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startF[i]}`;
+      outputF.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
-    outputD.textContent = '';
+    outputD.textContent = "";
     outputE.textContent = "";
-    outputF.append(startF)
     outputG.textContent = "";
     outputH.textContent = "";
     outputI.textContent = "";
@@ -441,13 +533,25 @@ input.addEventListener("input", (e) => {
   } else if (type === "G" || type === "g") {
     countries_start.textContent = `Countries that starts with g are ${startG.length}`;
 
+    let aArray;
+    for (let i = 0; i < startG.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startG[i]}`;
+      outputG.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
-    outputD.textContent = '';
+    outputD.textContent = "";
     outputE.textContent = "";
     outputF.textContent = "";
-    outputG.append(startG);
     outputH.textContent = "";
     outputI.textContent = "";
     outputJ.textContent = "";
@@ -470,14 +574,26 @@ input.addEventListener("input", (e) => {
   } else if (type === "H" || type === "h") {
     countries_start.textContent = `Countries that starts with h are ${startH.length}`;
 
+    let aArray;
+    for (let i = 0; i < startH.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startH[i]}`;
+      outputH.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
-    outputD.textContent = ''
+    outputD.textContent = "";
     outputE.textContent = "";
     outputF.textContent = "";
     outputG.textContent = "";
-    outputH.append(startH)
     outputI.textContent = "";
     outputJ.textContent = "";
     outputK.textContent = "";
@@ -499,15 +615,27 @@ input.addEventListener("input", (e) => {
   } else if (type === "I" || type === "i") {
     countries_start.textContent = `Countries that starts with i are ${startI.length}`;
 
+    let aArray;
+    for (let i = 0; i < startI.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startI[i]}`;
+      outputI.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
-    outputD.textContent = '';
+    outputD.textContent = "";
     outputE.textContent = "";
     outputF.textContent = "";
     outputG.textContent = "";
     outputH.textContent = "";
-    outputI.append(startI);
     outputJ.textContent = "";
     outputK.textContent = "";
     outputL.textContent = "";
@@ -528,6 +656,19 @@ input.addEventListener("input", (e) => {
   } else if (type === "J" || type === "j") {
     countries_start.textContent = `Countries that starts with j are ${startJ.length}`;
 
+    let aArray;
+    for (let i = 0; i < startJ.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startJ[i]}`;
+      outputJ.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -537,7 +678,6 @@ input.addEventListener("input", (e) => {
     outputG.textContent = "";
     outputH.textContent = "";
     outputI.textContent = "";
-    outputJ.append(startJ)
     outputK.textContent = "";
     outputL.textContent = "";
     outputM.textContent = "";
@@ -557,6 +697,19 @@ input.addEventListener("input", (e) => {
   } else if (type === "K" || type === "k") {
     countries_start.textContent = `Countries that starts with k are ${startK.length}`;
 
+    let aArray;
+    for (let i = 0; i < startK.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startK[i]}`;
+      outputK.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -567,7 +720,6 @@ input.addEventListener("input", (e) => {
     outputH.textContent = "";
     outputI.textContent = "";
     outputJ.textContent = "";
-    outputK.append(startK)
     outputL.textContent = "";
     outputM.textContent = "";
     outputN.textContent = "";
@@ -586,6 +738,19 @@ input.addEventListener("input", (e) => {
   } else if (type === "L" || type === "l") {
     countries_start.textContent = `Countries that starts with l are ${startL.length}`;
 
+    let aArray;
+    for (let i = 0; i < startL.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startL[i]}`;
+      outputL.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -597,7 +762,6 @@ input.addEventListener("input", (e) => {
     outputI.textContent = "";
     outputJ.textContent = "";
     outputK.textContent = "";
-    outputL.append(startL)
     outputM.textContent = "";
     outputN.textContent = "";
     outputO.textContent = "";
@@ -615,6 +779,19 @@ input.addEventListener("input", (e) => {
   } else if (type === "M" || type === "m") {
     countries_start.textContent = `Countries that starts with m are ${startM.length}`;
 
+    let aArray;
+    for (let i = 0; i < startM.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startM[i]}`;
+      outputM.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -627,7 +804,6 @@ input.addEventListener("input", (e) => {
     outputJ.textContent = "";
     outputK.textContent = "";
     outputL.textContent = "";
-    outputM.append(startM)
     outputN.textContent = "";
     outputO.textContent = "";
     outputP.textContent = "";
@@ -644,6 +820,19 @@ input.addEventListener("input", (e) => {
   } else if (type === "N" || type === "n") {
     countries_start.textContent = `Countries that starts with n are ${startN.length}`;
 
+    let aArray;
+    for (let i = 0; i < startN.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startN[i]}`;
+      outputN.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -657,7 +846,6 @@ input.addEventListener("input", (e) => {
     outputK.textContent = "";
     outputL.textContent = "";
     outputM.textContent = "";
-    outputN.append(startN)
     outputO.textContent = "";
     outputP.textContent = "";
     outputQ.textContent = "";
@@ -673,6 +861,19 @@ input.addEventListener("input", (e) => {
   } else if (type === "O" || type === "o") {
     countries_start.textContent = `Countries that starts with o are ${startO.length}`;
 
+    let aArray;
+    for (let i = 0; i < startO.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startO[i]}`;
+      outputO.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -687,7 +888,6 @@ input.addEventListener("input", (e) => {
     outputL.textContent = "";
     outputM.textContent = "";
     outputN.textContent = "";
-    outputO.append(startO)
     outputP.textContent = "";
     outputQ.textContent = "";
     outputR.textContent = "";
@@ -702,6 +902,19 @@ input.addEventListener("input", (e) => {
   } else if (type === "P" || type === "p") {
     countries_start.textContent = `Countries that starts with p are ${startP.length}`;
 
+    let aArray;
+    for (let i = 0; i < startP.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startP[i]}`;
+      outputP.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -717,7 +930,6 @@ input.addEventListener("input", (e) => {
     outputM.textContent = "";
     outputN.textContent = "";
     outputO.textContent = "";
-    outputP.append(startP)
     outputQ.textContent = "";
     outputR.textContent = "";
     outputS.textContent = "";
@@ -731,6 +943,19 @@ input.addEventListener("input", (e) => {
   } else if (type === "Q" || type === "q") {
     countries_start.textContent = `Countries that starts with q are ${startQ.length}`;
 
+    let aArray;
+    for (let i = 0; i < startQ.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startQ[i]}`;
+      outputQ.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -747,7 +972,6 @@ input.addEventListener("input", (e) => {
     outputN.textContent = "";
     outputO.textContent = "";
     outputP.textContent = "";
-    outputQ.append(startQ)
     outputR.textContent = "";
     outputS.textContent = "";
     outputT.textContent = "";
@@ -760,6 +984,19 @@ input.addEventListener("input", (e) => {
   } else if (type === "R" || type === "r") {
     countries_start.textContent = `Countries that starts with r are ${startD.length}`;
 
+    let aArray;
+    for (let i = 0; i < startR.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startR[i]}`;
+      outputR.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -777,7 +1014,6 @@ input.addEventListener("input", (e) => {
     outputO.textContent = "";
     outputP.textContent = "";
     outputQ.textContent = "";
-    outputR.append(startR)
     outputS.textContent = "";
     outputT.textContent = "";
     outputU.textContent = "";
@@ -789,6 +1025,19 @@ input.addEventListener("input", (e) => {
   } else if (type === "S" || type === "s") {
     countries_start.textContent = `Countries that starts with s are ${startS.length}`;
 
+    let aArray;
+    for (let i = 0; i < startS.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startS[i]}`;
+      outputS.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -807,7 +1056,6 @@ input.addEventListener("input", (e) => {
     outputP.textContent = "";
     outputQ.textContent = "";
     outputR.textContent = "";
-    outputS.append(startS)
     outputT.textContent = "";
     outputU.textContent = "";
     outputV.textContent = "";
@@ -818,6 +1066,19 @@ input.addEventListener("input", (e) => {
   } else if (type === "T" || type === "t") {
     countries_start.textContent = `Countries that starts with t are ${startT.length}`;
 
+    let aArray;
+    for (let i = 0; i < startT.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startT[i]}`;
+      outputT.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -837,7 +1098,6 @@ input.addEventListener("input", (e) => {
     outputQ.textContent = "";
     outputR.textContent = "";
     outputS.textContent = "";
-    outputT.append(startT)
     outputU.textContent = "";
     outputV.textContent = "";
     outputW.textContent = "";
@@ -847,6 +1107,19 @@ input.addEventListener("input", (e) => {
   } else if (type === "U" || type === "u") {
     countries_start.textContent = `Countries that starts with u are ${startU.length}`;
 
+    let aArray;
+    for (let i = 0; i < startU.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startU[i]}`;
+      outputU.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -867,7 +1140,6 @@ input.addEventListener("input", (e) => {
     outputR.textContent = "";
     outputS.textContent = "";
     outputT.textContent = "";
-    outputU.append(startU)
     outputV.textContent = "";
     outputW.textContent = "";
     outputX.textContent = "";
@@ -876,6 +1148,19 @@ input.addEventListener("input", (e) => {
   } else if (type === "V" || type === "v") {
     countries_start.textContent = `Countries that starts with v are ${startV.length}`;
 
+    let aArray;
+    for (let i = 0; i < startV.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startV[i]}`;
+      outputV.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -897,7 +1182,6 @@ input.addEventListener("input", (e) => {
     outputS.textContent = "";
     outputT.textContent = "";
     outputU.textContent = "";
-    outputV.append(startV)
     outputW.textContent = "";
     outputX.textContent = "";
     outputY.textContent = "";
@@ -927,7 +1211,7 @@ input.addEventListener("input", (e) => {
     outputT.textContent = "";
     outputU.textContent = "";
     outputV.textContent = "";
-    outputW.textContent = `No country starts with W`
+    outputW.textContent = `No country starts with W`;
     outputX.textContent = "";
     outputY.textContent = "";
     outputZ.textContent = "";
@@ -963,6 +1247,19 @@ input.addEventListener("input", (e) => {
   } else if (type === "Y" || type === "y") {
     countries_start.textContent = `Countries that starts with y are ${startY.length}`;
 
+    let aArray;
+    for (let i = 0; i < startY.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startY[i]}`;
+      outputY.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -987,11 +1284,23 @@ input.addEventListener("input", (e) => {
     outputV.textContent = "";
     outputW.textContent = "";
     outputX.textContent = "";
-    outputY.append(startY)
     outputZ.textContent = "";
   } else if (type === "Z" || type === "z") {
     countries_start.textContent = `Countries that starts with z are ${startZ.length}`;
 
+    let aArray;
+    for (let i = 0; i < startZ.length; i++) {
+      aArray = document.createElement("p");
+      aArray.className = "countries";
+      aArray.style.padding = "2rem 0.5rem";
+      aArray.style.border = "1px solid #dbd9d9";
+      aArray.style.borderRadius = "5px";
+      aArray.style.fontWeight = "bold";
+      aArray.style.margin = "0.5rem";
+      aArray.style.width = "9rem";
+      aArray.textContent += `${startZ[i]}`;
+      outputZ.appendChild(aArray);
+    }
     outputA.textContent = "";
     outputB.textContent = "";
     outputC.textContent = "";
@@ -1017,6 +1326,5 @@ input.addEventListener("input", (e) => {
     outputW.textContent = "";
     outputX.textContent = "";
     outputY.textContent = "";
-    outputZ.append(startZ);
   }
 });

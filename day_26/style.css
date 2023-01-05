@@ -21,11 +21,19 @@ h4 {
     font-size: 2rem;
     letter-spacing: 10px;
     color: #faf9f9;
+    font-weight: 800;
 }
 
 .total_countries {
 padding-top: 0.8rem;
 color: #faf9f9;
+font-weight: 700;
+}
+
+.countries_start {
+    color: #faf9f9;
+    padding-top: 0.5rem;
+    font-size: 0.8rem; 
 }
 
 .buttons {
