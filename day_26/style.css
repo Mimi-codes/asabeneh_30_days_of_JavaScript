@@ -13,11 +13,14 @@ body {
     background: gray;
     text-align: center;
     padding-bottom: 5rem;
+    background:linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.9)), url(./images/globe-2.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 h4 {
     text-transform: uppercase;
-    padding-top: 4rem;
+    padding-top: 8rem;
     font-size: 2rem;
     letter-spacing: 10px;
     color: #faf9f9;
@@ -43,12 +46,36 @@ font-weight: 700;
 
 .start_btn, .search_btn {
     font-size: 0.6rem;
-    padding: 0.5rem;
+    padding: 0.7rem 0.5rem;
     border-radius: 0.2rem;
     text-transform: uppercase;
     border: none;
     background: #541cb3;
     color: #faf9f9;
+}
+
+.sort_btn {
+    font-size: 0.6rem;
+    padding: 0.6rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    border: none;
+    background: #541cb3;
+    color: #faf9f9;
+}
+
+.start_btn:hover, .search_btn:hover {
+    background: #895be6;
+}
+
+.a {
+    font-size: 0.4rem;
+    margin-left: 0.4rem;
+}
+
+.last {
+    font-size: 0.4rem;
+    margin-left: 0.9rem;
 }
 
 .text_btn {
@@ -61,18 +88,17 @@ font-weight: 700;
 
 input {
     background: #f5f2f3;
+    outline: none;
 }
 
 input::placeholder {
     text-align: center;
     font-weight: 400;
-    color: #d9dbde;
+    color: #cacdd2;
 }
 
-/*
-btn-1 #541cb3
-btn-2 #895be6
-num #86b75a
-placeholder #d9dbde
-body #ffffe3
-*/
+
+.fa {
+    margin-left: 0.5rem;
+    color: white;
+}

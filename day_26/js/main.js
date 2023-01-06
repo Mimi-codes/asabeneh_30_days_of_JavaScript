@@ -7,89 +7,49 @@ const countries_start = document.querySelector(".countries_start");
 
 countries_start.textContent = ``;
 
+const sort_btn = document.querySelector('.sort_btn') 
+sort_btn.addEventListener('click', () => {
+
+})
+
+
 const start_btn = document.querySelector(".start_btn");
 start_btn.addEventListener("click", (e) => {
   // console.log(ca)
 });
 
+const search_btn = document.querySelector('.search_btn')
+search_btn.addEventListener('click', (e) => {
+    let click = e.type
+    
+})
+
 let startA = countries.filter((byLetter) => byLetter.startsWith("A"));
-
-console.log(startA);
-
 let startB = countries.filter((byLetter) => byLetter.startsWith("B"));
-console.log(startB);
-
 let startC = countries.filter((byLetter) => byLetter.startsWith("C"));
-console.log(startC);
-
 let startD = countries.filter((byLetter) => byLetter.startsWith("D"));
-console.log(startD);
-
 let startE = countries.filter((byLetter) => byLetter.startsWith("E"));
-console.log(startE);
-
 let startF = countries.filter((byLetter) => byLetter.startsWith("F"));
-console.log(startF);
-
 let startG = countries.filter((byLetter) => byLetter.startsWith("G"));
-console.log(startG);
-
 let startH = countries.filter((byLetter) => byLetter.startsWith("H"));
-console.log(startH);
-
 let startI = countries.filter((byLetter) => byLetter.startsWith("I"));
-console.log(startI);
-
 let startJ = countries.filter((byLetter) => byLetter.startsWith("J"));
-console.log(startJ);
-
 let startK = countries.filter((byLetter) => byLetter.startsWith("K"));
-console.log(startK);
-
 let startL = countries.filter((byLetter) => byLetter.startsWith("L"));
-console.log(startL);
-
 let startM = countries.filter((byLetter) => byLetter.startsWith("M"));
-console.log(startM);
-
 let startN = countries.filter((byLetter) => byLetter.startsWith("N"));
-console.log(startN);
-
 let startO = countries.filter((byLetter) => byLetter.startsWith("O"));
-console.log(startO);
-
 let startP = countries.filter((byLetter) => byLetter.startsWith("P"));
-console.log(startP);
-
 let startQ = countries.filter((byLetter) => byLetter.startsWith("Q"));
-console.log(startQ);
-
 let startR = countries.filter((byLetter) => byLetter.startsWith("R"));
-console.log(startR);
-
 let startS = countries.filter((byLetter) => byLetter.startsWith("S"));
-console.log(startS);
-
 let startT = countries.filter((byLetter) => byLetter.startsWith("T"));
-console.log(startT);
-
 let startU = countries.filter((byLetter) => byLetter.startsWith("U"));
-console.log(startU);
-
 let startV = countries.filter((byLetter) => byLetter.startsWith("V"));
-console.log(startV);
-
 let startW = countries.filter((byLetter) => byLetter.startsWith("W"));
-console.log(startW);
-
 let startX = countries.filter((byLetter) => byLetter.startsWith("X"));
-console.log(startX);
-
 let startY = countries.filter((byLetter) => byLetter.startsWith("Y"));
-console.log(startY);
-
 let startZ = countries.filter((byLetter) => byLetter.startsWith("Z"));
-console.log(startZ);
 
 const input = document.querySelector(".text_btn");
 
@@ -295,7 +255,10 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
-    //   aArray.style.color = "#faf9f9";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startA[i]}`;
@@ -338,6 +301,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startB[i]}`;
@@ -378,6 +346,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startC[i]}`;
@@ -418,6 +391,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startD[i]}`;
@@ -459,6 +437,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startE[i]}`;
@@ -500,6 +483,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startF[i]}`;
@@ -541,6 +529,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startG[i]}`;
@@ -582,6 +575,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startH[i]}`;
@@ -623,6 +621,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startI[i]}`;
@@ -664,6 +667,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startJ[i]}`;
@@ -705,6 +713,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startK[i]}`;
@@ -746,6 +759,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startL[i]}`;
@@ -787,6 +805,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startM[i]}`;
@@ -828,6 +851,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startN[i]}`;
@@ -869,6 +897,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startO[i]}`;
@@ -910,6 +943,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startP[i]}`;
@@ -951,6 +989,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startQ[i]}`;
@@ -992,6 +1035,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startR[i]}`;
@@ -1033,6 +1081,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startS[i]}`;
@@ -1074,6 +1127,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startT[i]}`;
@@ -1115,6 +1173,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startU[i]}`;
@@ -1156,6 +1219,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startV[i]}`;
@@ -1255,6 +1323,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startY[i]}`;
@@ -1296,6 +1369,11 @@ input.addEventListener("input", (e) => {
       aArray.style.border = "1px solid #dbd9d9";
       aArray.style.borderRadius = "5px";
       aArray.style.fontWeight = "bold";
+      aArray.style.background = 'linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.7)), url(/day_26/images/map_image.jpg)'
+      aArray.style.backgroundPosition = 'center'
+      aArray.style.backgroundSize = 'cover'
+      aArray.style.color = "#faf9f9";
+      aArray.style.margin = "0.5rem";
       aArray.style.margin = "0.5rem";
       aArray.style.width = "9rem";
       aArray.textContent += `${startZ[i]}`;
