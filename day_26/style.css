@@ -16,6 +16,7 @@ body {
     background:linear-gradient(0deg, rgb(60, 90, 116, 0.4), rgb(60, 90, 116, 0.9)), url(./images/globe-2.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h4 {
