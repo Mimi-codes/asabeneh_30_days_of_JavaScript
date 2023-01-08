@@ -3,3 +3,4 @@
 #started day_26 countries visualization
 #completed day_26 world countries visualization
 #completed day 27 asabeneh portfolio
+#worked on the inputs and players' details of the leader-board challenge
