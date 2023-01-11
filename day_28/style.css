@@ -1,27 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-h4 {
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  section {
+    margin: 5rem auto;
+    text-align: center;
+  }
+
+  h4 {
     text-align: center;
     padding-top: 2rem;
-    word-spacing: 0.2rem;
+    word-spacing: 0.6rem;
     font-size: 1.8rem;
 }
 
-.input {
+  .input {
     display: flex;
     justify-content: center;
 }
 
 input {
     padding: 0.7rem;
-    margin-right: 1rem;
+    margin-right: 0.4rem;
     margin-top: 1.5rem;
     border: 0.2px solid #e5c9c5;
-    /* outline: 0.2px solid #f4e8e7; */
+    outline: 0.2px solid #f4e8e7;
 }
 
 .add_btn {
@@ -40,53 +48,52 @@ input {
     margin-bottom: 2rem;
 }
 
-.output_div {
-    margin: 0.5rem auto;
-    padding: 0.8rem 1.5rem;
+
+  .add {
     background: #e5c9c5;
+    margin: 1rem auto 0;
+    height: 3rem;
+    padding: 1rem 1.2rem;
+    list-style: none;
     display: flex;
-    width: 61.5rem;
-    /* justify-content: space-between; */
-}
+    justify-content: space-between;
+    width: 67.5%;
+  }
 
-.name , .country{
-    flex: 0.3;
-    margin: auto 0;
-}
+  h5 {
+    margin-top: 0.5rem;
+    margin-left: -4.5rem;
+    font-size: 1rem;
+  }
 
-.score {
-    flex: 0.35;
-    margin: auto 0;
-}
+  .date {
+    font-size: 0.7rem;
+    color: grey;
+    margin-top: -1.3rem;
+  }
 
-.all {
+  .delBtn,
+  .plus,
+  .minus {
+    background-color: white;
+    width: 1rem;
+    height: 1rem;
+    padding: 1rem;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+
+  .icons {
     display: flex;
+    margin-right: 3rem;
+  }
 
-}
+  .top {
+    margin-top: 1rem;
+  }
 
-.del_btn, .del_btn_1 {
-    border: none;
-    background: none;
-    color: #ea3929;
-}
-
-.del {
-    padding: 1.2rem 1.1rem;
-    border-radius: 50%;
-    background: white;
-    margin-right: 0.4rem;
-}
-
-.add {
-    padding: 1.1rem 1.4rem;
-    border-radius: 50%;
-    background: white;
-    margin-right: 0.4rem;
-}
-
-.sub {
-    padding: 1.1rem 1.3rem;
-    border-radius: 50%;
-    background: white;
-    margin-right: 0.4rem;
-}
+  .plus:hover,
+  .minus:hover,
+  .delBtn:hover {
+    background-color: rgb(155, 245, 155);
+  }
