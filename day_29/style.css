@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+}
+
+.output {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paragraph {
+    margin-left: 1.5rem;
+    font-size: 5.5rem;
+    word-spacing: 1rem;
+    transition: ;
+}
