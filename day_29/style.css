@@ -16,8 +16,22 @@ section {
 }
 
 .paragraph {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     font-size: 5.5rem;
     word-spacing: 1rem;
-    transition: ;
-}
+    animation: pulse 5s infinite;
+    /* position: relative; */
+    /* animation-name: example; */
+    /* animation-duration: 4s; */
+  }
+  
+  /*
+  @keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+  */
+ 
