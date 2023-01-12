@@ -47,7 +47,7 @@ for (const item of text) {
         let random3 = Math.floor(Math.random() * 255)
         let color = `rgb(${random1},${random2},${random3})`
         p.style.color = color;
-        p.style.fontFamily = '"Rowdies", cursive'
+        p.style.fontFamily = '"Montserrat", sans-serif'
     }
     setInterval(chameleon, 1000)
     output.append(p)
