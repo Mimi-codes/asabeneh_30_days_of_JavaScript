@@ -2874,22 +2874,22 @@ outputZ.textContent = "";
 }
 else if (input === 'W' || input === 'w') {
   let startW = countries.filter(item => item.capital.startsWith('W'));
-  for(var i = 0; i < startX.length; i++) {
+  for(var i = 0; i < startW.length; i++) {
     searchItem.textContent = `${startW.length} countries satisfied the search criteria`
     let  aArray = document.createElement("p");
     aArray.className = "countries_output";
 
-    let name = startX[i].name
+    let name = startW[i].name
     let name_text = document.createElement("p");
     name_text.className = "name_text";
     name_text.textContent = `${name}`
     
-    let capital = startX[i].capital
+    let capital = startW[i].capital
     let  capital_text = document.createElement("p");
     capital_text.className = "capital_text";
     capital_text.textContent = `Capital: ${capital}`
 
-    let languages = startX[i].languages
+    let languages = startW[i].languages
     let  languages_text = document.createElement("p");
     languages_text.className = "languages_text";
     languages_text.textContent = `Languages: ${languages}`
@@ -2925,7 +2925,6 @@ outputA.textContent = "";
   outputT.textContent = "";
   outputU.textContent = "";
   outputV.textContent = "";
-  outputW.textContent = `No country starts with W`;
   outputX.textContent = "";
   outputY.textContent = "";
   outputZ.textContent = "";
@@ -4578,7 +4577,7 @@ else if (input === 'Z' || input === 'z') {
     let flag = startZ[i].flag
     let flag_img = document.createElement("p");
     flag_img.className = "flag_img";
-    flag_img.append(flag)
+    // flag_img.append(flag)
 
     let name = startZ[i].name
     let name_text = document.createElement("p");
@@ -4633,7 +4632,11 @@ outputA.textContent = "";
 
 })
 
+/*
 for( let i = 0; i < countries.length; i++) {
-  document.body.append(countries[i].flag)
-
+  var x = document.createElement("IMG");
+  x.setAttribute('src', countries[i]['flag']);
+  x.setAttribute("alt", "Learn Servlets");
+  document.body.appendChild(x);
 }
+*/
