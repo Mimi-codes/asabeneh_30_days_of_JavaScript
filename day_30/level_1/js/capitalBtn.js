@@ -1,5 +1,5 @@
 //This file contains the code for visualizing capital of different countries based on user alphabetical input (the first alphabet) and I had to remove the flag from the display output code because it did not display. It will be rectified soon 
-
+ 
 import { countries } from "./countries.js";
 
 //header
