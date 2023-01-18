@@ -93,3 +93,74 @@ background-color: white;
     padding: 0.8rem 0;
     color: #ffa606;
 }
+
+.button_div {
+    padding-top: 2rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    background: white;
+    border-bottom: 2px solid gray;
+}
+
+.chart_btn_population, .chart_btn_languages {
+    margin-right: 0.6rem;
+    padding: 0.5rem 0.8rem;
+    border: none;
+    justify-content: center;
+    background: #f2a93b;
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.text_para {
+    padding: 1.2rem 0 0.8rem 0;
+}
+
+.container {
+    display: flex;
+    margin-top: 0.8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph {
+    background-color: #f2a93b;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2px;
+    height: 0.8rem;
+}
+
+.country_names {
+    flex: 0.2;
+}
+
+.lang_names {
+    flex: 0.1;
+}
+
+.language_output_div {
+    justify-content: center;
+    align-items: center
+}
+
+.language_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.charts_section {
+    margin-left: 3rem;
+    width: 350px;
+    margin-top: 0.5rem;
+}
+
+.population {
+    flex: 0.2;
+}
+
+.lang_pop {
+    margin-right: 3rem;
+}
+
