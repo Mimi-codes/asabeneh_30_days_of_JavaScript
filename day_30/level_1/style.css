@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+h4 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    color: #ffa606;
+    padding-bottom: 0.5rem;
+}
+
+.search_item {
+    font-style: italic;
+    color: #ffa606;
+    padding-top: 0.3rem;
+}
+
+.search {
+    padding-top: 1rem;
+text-align: center;
+padding-bottom: 1rem;
+background-color: white;
+}
+
+.search_input {
+    border-radius: 5rem;
+    padding: 0.8rem 0 0.8rem 1rem;
+    width: 42rem;
+    border: 1px solid gray;
+    outline: none;
+    margin-top: 0.5rem;
+}
+
+.error_message {
+    margin-top: 1.5rem;
+    color: red;
+}
+
+.buttons {
+    margin-top: 1.5rem;
+}
+
+.name_btn, .population_btn, .capital_btn, .shuffle_btn {
+    padding: 0.6rem 2rem;
+    border-radius: 5rem;
+    background: #ffa606;
+    margin-right: 1rem;
+    border: none;
+    text-transform: uppercase;
+}
+
+.output_a, .output_b, .output_c, .output_d, .output_e, .output_f, .output_g, .output_h, .output_i, .output_j, .output_k, .output_l, .output_m, .output_n, .output_o, .output_p, .output_q, .output_r, .output_s, .output_t, .output_u, .output_v, .output_w, .output_x, .output_y, .output_z {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.output_div {
+    text-align: center;
+    margin: 5% auto;
+    width: 95%;
+    margin-left: 9.5%;
+}
+
+.countries_output {
+    padding: 0.5rem 0.5rem 2.5rem 0.5rem;
+    border: 1px solid #dbd9d9;
+    border-radius: 5px;
+    font-weight: bold;
+    background: white;
+    background-position: center;
+    background-size: cover;
+    margin: 0.3rem 0.5rem;
+    width: 13rem
+
+}
+
+
+.name_text {
+    text-align: center;
+    padding: 0.8rem 0;
+    color: #ffa606;
+}
