@@ -1,3 +1,5 @@
+//This file contains the code for visualizing and sorting countries population from highest to lowest based on user alphabetical input (the first alphabet)
+
 import { countries } from "./countries.js";
 //header
 const countryNum = document.querySelector('.country_num')
@@ -149,6 +151,7 @@ outputDiv.append(
                   let name_text = document.createElement("p");
                   name_text.className = "name_text";
                   name_text.textContent = `${name}`
+                 
                   
                   let capital = startA[i].capital
                   let  capital_text = document.createElement("p");
@@ -166,6 +169,11 @@ outputDiv.append(
                   population_text.textContent = `Population: ${population.toLocaleString("en-US")}`;
       
                     aArray.append(name_text, capital_text, languages_text, population_text)
+
+                    // let nameArr = []
+                    // nameArr.push(startA[i].name)
+                    // console.log(nameArr)
+                    // console.log(name)
                     outputA.append(aArray)
             }        
             errorMessage.textContent = ``
@@ -1645,7 +1653,7 @@ outputDiv.append(
           population_text.className = "population_text";
           population_text.textContent = `Population: ${population.toLocaleString("en-US")}`;
       
-            aArray.append(flag_img ,name_text, capital_text, languages_text, population_text)
+            aArray.append(flag_img, name_text, capital_text, languages_text, population_text)
             outputZ.append(aArray)
       }
       errorMessage.textContent = ``
@@ -1675,8 +1683,8 @@ outputDiv.append(
         outputX.textContent = "";
         outputY.textContent = "";
       }
-      
+
       })
       
   }
-  populationOutput()
+  // populationOutput()

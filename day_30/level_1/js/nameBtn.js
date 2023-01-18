@@ -1,5 +1,6 @@
-import { countries } from "./countries.js";
+//This file contains the code for visualizing names and other details like languages and population of different countries based on user alphabetical input (the first alphabet) and I had to remove the flag from the display output code because it did not display
 
+import { countries } from "./countries.js";
 
 //header
 const countryNum = document.querySelector('.country_num')

@@ -1,3 +1,5 @@
+// Array of object containing countries data 
+
 export const countries = [
     {
       name: 'Afghanistan',
