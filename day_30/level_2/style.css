@@ -14,22 +14,30 @@ form {
     width: 30rem;
 }
 
+label {
+    font-weight: 600;
+}
+
 input {
    margin: 0.8rem 0;
    padding: 0.6rem;
    width: 30rem;
 }
 
-.submit_btn {
+#submit_btn {
     padding: 0.8rem;
     text-align: center;
-    background: #000;
+    background: #444444;
     color: white;
     width: 8rem;
     margin-top: 0.5rem;
+    border-radius: 5px;
+    border: none;
 }
 
-.f_error_message {
+#first-name-err, #last-name-err, #email-err, #mobile-number-err, #password-err, #bio-err {
     text-align: center;
     margin: 1rem 0;
+    color: #ffa606;
+    font-weight: 500;
 }
