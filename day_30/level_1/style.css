@@ -92,7 +92,16 @@ background-color: white;
     text-align: center;
     padding: 0.8rem 0;
     color: #ffa606;
+    font-size: 1rem;
 }
+
+.capital_text, .languages_text, .population_text {
+    color: #b8b7b7;
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+}
+
+/* #b8b7b7 */
 
 .button_div {
     padding-top: 2rem;
